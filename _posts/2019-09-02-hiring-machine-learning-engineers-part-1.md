@@ -37,7 +37,7 @@ So you will be spared the cringe of another Venn Diagram; it suffices to say tha
 
 >  *On a side note I can't resist: the football nerd in me sees a strong parable with Total Football, a revolutionary football system born in Holland in the 1960s. In Total Football, no outfield player had a fully deterministic role; any player could attack an area traditionally "owned" by another teammate, who would in turn have to cover the area exposed by the attacker. As a style of play, it was simultaneously incredibly stylish but also very successful in terms of gaining a competitive advantage; I would also assume that it made footballers enjoy their job more!* 
 >
-> ***Sketch** : *Total Football intuition** (taken from Imperial BS Student Blog, where someone had similar thoughts with me):
+> **Sketch** : **Total Football intuition** (taken from Imperial BS Student Blog, where someone had similar thoughts with me):
 >
 > ![total football](http://i.imgur.com/W5LzxMi.png)
 
@@ -78,9 +78,9 @@ In part 2, I will cover how to define a hiring process for a Machine Learning En
 
 ## Resources
 
-1. https://towardsdatascience.com/the-third-wave-data-scientist-1421df7433c9
-2. https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7
-3. http://nlathia.github.io/2019/08/13/Machine-learning-faster/
-4. https://www.imperial.ac.uk/business-school/intelligence/student-blog/can-total-football-work-organisations/
-5. https://medium.com/@tomaszdudek/but-what-is-this-machine-learning-engineer-actually-doing-18464d5c699
-6. https://peadarcoyle.com/2017/07/23/avoiding-being-a-trophy-data-scientist
+1. [The Thrid Wave Data Scientist](https://towardsdatascience.com/the-third-wave-data-scientist-1421df7433c9)
+2. [Data Engineers](https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7)
+3. [Machine Learning faster](http://nlathia.github.io/2019/08/13/Machine-learning-faster/)
+4. [Can ‘Total Football’ work in organisations?](https://www.imperial.ac.uk/business-school/intelligence/student-blog/can-total-football-work-organisations/)
+5. [But what is this Machine Learning Engineer actually doing?](https://medium.com/@tomaszdudek/but-what-is-this-machine-learning-engineer-actually-doing-18464d5c699)
+6. [Avoiding being a trophy Data Scientist](https://peadarcoyle.com/2017/07/23/avoiding-being-a-trophy-data-scientist)
