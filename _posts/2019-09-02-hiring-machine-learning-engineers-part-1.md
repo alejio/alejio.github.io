@@ -27,17 +27,17 @@ Before jumping onto describing the Machine Learning Engineer role, it is useful 
 
 Nowadays, the unicorn halo crowning those Data Scientists who specialise in narrow scientific methodologies has generally fallen away. Typically, the most effective Data Scientist profiles in the industry, in most cases, combine scientific rigour and a product/business-first mentality - and rather crucially a strong will to become a "good programmer". 
 
-Hence, the emergence of the Third Wave Data Scientist<sup>1</sup>, following its predecessor the PoC Data Scientist, and the ancestral Data Analyst variant. Having experienced these transitions first hand, it now feels like the industry, at least in its major hubs, is learning to put Machine Learning practitioners to use much more effectively.
+Hence, the emergence of the Third Wave Data Scientist, following its predecessor the proof-of-concept Data Scientist, and the ancestral Data Analyst variant. Having experienced these transitions first hand, it now feels like the industry, at least in its major hubs, is learning to put Machine Learning practitioners to use much more effectively.
 
-This is part of an overall tech ecosystem evolution fuelled by ever-increasing venture capital and the ensuing explosive birth rate of startups requiring "jacks-of-all trades"- and is closely linked to the proliferation of the Machine Learning Engineer, following that of the Data Engineer<sup>2</sup>.
+This is part of an overall tech ecosystem evolution fuelled by ever-increasing venture capital and the ensuing explosive birth rate of startups requiring "jacks-of-all trades"- and is closely linked to the proliferation of the Machine Learning Engineer, following that of the Data Engineer.
 
-As tech history teaches us, nomenclature is transient; at the moment it means different things at different places. But today what really matters is that it doesn't make sense to place hard borders between roles and teams. I won't go into too much detail here, as a bunch of amazing tech blogs have already covered this extensively<sup>3</sup>.
+As tech history teaches us, nomenclature is transient; at the moment it means different things at different places. But today what really matters is that it doesn't make sense to place hard borders between roles and teams. I won't go into too much detail here, as a bunch of amazing tech blogs have already covered this extensively.
 
 So you will be spared the cringe of another Venn Diagram; it suffices to say that the set of common skills across all areas is becoming increasingly larger over time. A modern ML-powered team requires flexibility and interchangeability of duties.
 
 >  *On a side note I can't resist: the football nerd in me sees a strong parable with Total Football, a revolutionary football system born in Holland in the 1960s. In Total Football, no outfield player had a fully deterministic role; any player could attack an area traditionally "owned" by another teammate, who would in turn have to cover the area exposed by the attacker. As a style of play, it was simultaneously incredibly stylish but also very successful in terms of gaining a competitive advantage; I would also assume that it made footballers enjoy their job more!* 
 >
-> ***Sketch** : *Total Football intuition** (taken from Imperial BS Student Blog<sup>4</sup>, where someone had similar thoughts with me):
+> ***Sketch** : *Total Football intuition** (taken from Imperial BS Student Blog, where someone had similar thoughts with me):
 >
 > ![total football](http://i.imgur.com/W5LzxMi.png)
 
@@ -45,7 +45,7 @@ So you will be spared the cringe of another Venn Diagram; it suffices to say tha
 
 But don't get me wrong: whilst duties of ML-powered team members overlap significantly, I believe there are important differences, particularly between the desirable **mentalities** of Machine Learning Engineers and Data Scientists.
 
-A Machine Learning *Engineer*<sup>5</sup> is **a doer**, essentially a Software Engineer in disguise. They are able to implement the end-to-end workflow required for deploying an ML service within an organisations' existing tech infrastructure.
+A Machine Learning *Engineer* is **a doer**, essentially a Software Engineer in disguise. They are able to implement the end-to-end workflow required for deploying an ML service within an organisations' existing tech infrastructure.
 
 Speaking the DevOps and Backend Engineering languages, they are the ones who make the work of model-building Data Scientists possible and in comparison their technical responsibilities are much broader and more fundamental. 
 
@@ -66,7 +66,7 @@ Bringing in Machine Learning Engineers early to work with Software Engineers has
 1. They can participate and outline Data Science-related requirements to Engineers building out data infrastructure and pipelines; and
 2. they are capable of building end-to-end prototype workflows, thus setting the ground for Data Scientists to become quickly productive.   
 
-But if the business has not ironed out its data infrastructure,  Data Scientists are not the right hire in the short term. Data is oxygen for them, and its absence is detrimental for both job satisfaction and productivity. In the longer term, the infusion of a scientific mindset and the value-add provided by Data Scientists can become a major asset and a differentiator for businesses. But in most cases that comes later in the journey: in the meanwhile, avoid becoming a trophy Data Scientist <sup>6</sup>
+But if the business has not ironed out its data infrastructure,  Data Scientists are not the right hire in the short term. Data is oxygen for them, and its absence is detrimental for both job satisfaction and productivity. In the longer term, the infusion of a scientific mindset and the value-add provided by Data Scientists can become a major asset and a differentiator for businesses. But in most cases that comes later in the journey: in the meanwhile, avoid becoming a trophy Data Scientist!
 
 ## Next post preview
 In part 2, I will cover how to define a hiring process for a Machine Learning Engineer:
