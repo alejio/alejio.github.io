@@ -47,7 +47,7 @@ A Machine Learning *Engineer* is **a doer**, essentially a Software Engineer in 
 
 Speaking the DevOps and Backend Engineering languages, they are the ones who make the work of model-building Data Scientists possible and in comparison their technical responsibilities are much broader and more fundamental. When not deploying models to production, you will find them building data pipelines, improving monitoring capabilities and tinkering with nascent Machine Learning libraries in exotic programming languages. Whilst constantly fixing bugs across the stack.
 
-In contrast, a Data *Scientist* is primarily **a thinker**, whose main task is coming up with data-driven ways of solving a business/product problem - and then actually solving it. They tend to spend more time with the product side of organisations and eventually learn to condense high-level "business" talk into a set of analytical tasks. 
+In contrast, a Data *Scientist* is primarily **a thinker**, whose main task is coming up with data-driven ways of solving a business/product problem - and then actually solving it. They tend to spend more time with the product side of organisations and eventually learn to condense high-level "business" talk into a set of analytical tasks.
 
 > Data *Scientists* exercise failing; Machine Learning *Engineers* exercise **not** failing.
 
