@@ -12,7 +12,7 @@ But the real differences only really clicked after having experienced first-hand
 
 > Alex: "How to name the role is superficial. In the end of the day, Machine Learning Engineers or Data Scientists simply build the models and work with the team's Software Engineers to integrate all those fancy models in production, right?"
 >
-> Software Engineers in the room: *...produce Mona Lisa-esque smile.. awkward silence ensues...*]
+> Software Engineers in the room: *...produce Mona Lisa-esque smile.. awkward silence ensues...*
 
 The hiring process itself, reviewing applications, assignment submissions and conducting video/onsite interviews with my Data Science/ML peers was an awesome experience, so I'd like to share some of my thoughts and observations, in the hope that they may prove useful for people on either side of the process.
 
