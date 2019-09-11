@@ -46,13 +46,24 @@ It is a much better bet to describe in a bit more detail the actual responsibili
 
 I like take home assignments. Done right, they provide value to both sides of the process regardless of the outcome.
 
-In my experience as a Data Scientist, the hiring process of most companies include an assignment; I've repeatedly seen how important a good submission is for a candidate. 
-
-Now, having been through the process of evaluating Machine Learning Engineer tasks for candidates, I retrospectively realise the caveats [...] 
+The task should be designed to give the hiring manager an insight into the candidate's strengths and weaknesses, to further explore in a next stage. Its purpose should not be to extensively probe into all requirements of the role. As a Data Scientist I have had some tasks sent out to me that I found, well, rather patronising. One example that stands out in my memory was for a role I didn't even apply to, but had merely responded to an internal recruiter of the company. I was promptly sent a task containing 5 sections: aptitude/IQ, SQL, A/B testing, probability, Python. I thought at the time that this task is in place as a means to streamline the application process for this company who clearly had many many candidates. But then what is the point for having an internal recruiter? 
 
 
 
-(realistic)
+Tips for employer 
+
+1. Don't make it overly specific to your business problem
+2. Respect the candidate and their time
+3. Make submission public on github
+4. 
+
+
+
+Tips for candidate
+
+1. Keep it concise
+2. Provide an end-to-end solution
+3. Don't overemphasise modelling bit (unless if explicitly asked)
 
 ## 3. Interviewing
 
