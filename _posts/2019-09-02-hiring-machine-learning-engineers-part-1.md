@@ -16,10 +16,11 @@ But the real differences only really clicked after having experienced first-hand
 
 The hiring process itself, reviewing applications, assignment submissions and conducting video/onsite interviews with my Data Science/ML peers was an awesome experience, so I'd like to share some of my thoughts and observations, in the hope that they may prove useful for people on either side of the process.
 
-The story is broken down into 2 parts:
+The story is broken down into 3 parts:
 
 1. Context
-2. Defining a hiring process.
+2. Job spec and assignment
+3. Interviewing and closing remarks.
 
 ## Context
 
@@ -70,9 +71,8 @@ But if the business has not ironed out its data infrastructure,  Data Scientists
 
 In Part 2, I will cover how to define a hiring process for a Machine Learning Engineer:
 
-- Articulating role responsibilities;
-- using a take-home task as a means of mutual education and communication; and
-- having realistic expectations.
+- Articulating role responsibilities
+- Using a take-home task as a means of mutual education and communication.
 
 ## Resources
 
