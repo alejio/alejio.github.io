@@ -5,9 +5,7 @@ categories: [Data Science]
 
 ---
 
-[Part 1](https://alexiospanos.com/hiring-machine-learning-engineers-part-1/) discussed the emergence of the Machine Learning Engineer role, its distinction from the Data Scientist and the importance of organisations prioritising hiring the former against the latter when data infrastructure maturity is low. 
-
-In Part 2, we will cover more practical considerations around the hiring process.
+[Part 1](https://alexiospanos.com/hiring-machine-learning-engineers-part-1/) discussed the emergence of the Machine Learning Engineer role, its distinction from the Data Scientist and the importance of organisations prioritising hiring the former against the latter when data infrastructure maturity is low. In Part 2, we will cover more practical considerations around the hiring process.
 
 ## Get the job spec right
 
