@@ -59,18 +59,18 @@ I've realised that a few assignments sent to me over the years were arguably ina
 
 **Machine Learning Engineer assignment tips TL;DR:**
 
->  ### Employer: 
->
-> 
+>  **<u>Employer</u>**
 >
 > 1. Respect the candidate and their time!!
-> 2. Don't make assignment overly specific to your business problem
+>2. Don't make assignment overly specific to your business problem
 > 3. Test end-to-end productionisation skills, don't focus on Machine Learning skills
 > 4. Reward candidate for their time by allowing them to push submission to their git portfolio
 
 
 
-> ### Candidate:
+
+
+> **<u>Candidate</u>**
 >
 > 1. Don't hesitate to ask for clarifications!
 > 2. Presentation is key: keep the submission readable and concise!!
