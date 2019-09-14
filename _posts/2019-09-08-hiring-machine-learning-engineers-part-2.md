@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hiring Machine Learning Engineers Part 2 - Hiring process
+title: Hiring Machine Learning Engineers Part 2 - Job spec and assignment
 categories: [Data Science]
 
 ---
@@ -82,4 +82,4 @@ I've realised that a few assignments sent to me over the years were arguably ina
 
 
 
-In the next post, I will discuss interviewing and having realistic expectations.
+In the final part 3, I will discuss interviewing and having realistic expectations.
