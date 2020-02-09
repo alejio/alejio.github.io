@@ -2,6 +2,22 @@
   
     {
 
+      "title"    : "Hiring Product Managers; a different beast!",
+      "url"      : "/hiring-product-managers/",
+      "category" : "Product Management",
+      "date"     : "February  9, 2020"
+    } ,
+  
+    {
+
+      "title"    : "Hiring Machine Learning Engineers Part 2 - Job spec and assignment",
+      "url"      : "/hiring-machine-learning-engineers-part-2/",
+      "category" : "Data Science",
+      "date"     : "September  8, 2019"
+    } ,
+  
+    {
+
       "title"    : "Hiring Machine Learning Engineers Part 1 - Context",
       "url"      : "/hiring-machine-learning-engineers-part-1/",
       "category" : "Data Science",

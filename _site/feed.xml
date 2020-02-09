@@ -1,61 +1,237 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-02T15:47:10+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alex Spanos</title><subtitle>Data Science and semi-relevant tangents</subtitle><author><name>Alex Spanos</name></author><entry><title type="html">Hiring Machine Learning Engineers Part 1 - Context</title><link href="http://localhost:4000/hiring-machine-learning-engineers-part-1/" rel="alternate" type="text/html" title="Hiring Machine Learning Engineers Part 1 - Context" /><published>2019-09-02T00:00:00+01:00</published><updated>2019-09-02T00:00:00+01:00</updated><id>http://localhost:4000/hiring-machine-learning-engineers-part-1</id><content type="html" xml:base="http://localhost:4000/hiring-machine-learning-engineers-part-1/">&lt;p&gt;Recently, my team found ourselves hiring for a &lt;em&gt;Machine Learning Engineer&lt;/em&gt;. Whilst considering the requirements for this role, a relatively new and ill-defined one in the industry, I found myself thinking about its contrast with the &lt;em&gt;Data Scientist&lt;/em&gt; - incidentally, the role I continue to identify mostly with.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-09T19:09:18+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alex Spanos</title><subtitle>Data Science and semi-relevant tangents</subtitle><author><name>Alex Spanos</name></author><entry><title type="html">Hiring Product Managers; a different beast!</title><link href="http://localhost:4000/hiring-product-managers/" rel="alternate" type="text/html" title="Hiring Product Managers; a different beast!" /><published>2020-02-09T00:00:00+00:00</published><updated>2020-02-09T00:00:00+00:00</updated><id>http://localhost:4000/hiring-product-managers</id><content type="html" xml:base="http://localhost:4000/hiring-product-managers/">&lt;p&gt;Doubling up on my Data Scientist role, I did a stint as interim Product Manager for our product team. Here are my thoughts on Product Management and my observations on what it takes to succeed in high uncertainty environments (aka startups). And the million dollar question: how to hire a good Product Manager?&lt;/p&gt;
 
-&lt;p&gt;In the recent past this kind of distinction only made academic sense to me. I will confess to subconsciously thinking that a Machine Learning Engineer is someone who took the &lt;a href=&quot;https://www.fast.ai/&quot;&gt;fast.ai&lt;/a&gt; course and now builds Deep Learning models on GPU’s, claiming out-of-the-world performances, without mentioning the caveats and biases of the underlying datasets.&lt;/p&gt;
+&lt;h2 id=&quot;a-data-scientists-roundtrip-to-product-management&quot;&gt;A Data Scientist’s roundtrip to Product Management&lt;/h2&gt;
+
+&lt;p&gt;Startup life can be quite unpredictable. I hadn’t imagined when I joined as a “Data Scientist” 1.5 years ago that most of my time would be spent doubling up as Product Manager. Particularly, when in all truthfulness, I didn’t understand what kind of value a Product Manager ACTUALLY brings.&lt;/p&gt;
+
+&lt;p&gt;That was still the case when I was formally given the “interim” PM role for one of the core product teams in April 2019, following a global short-term product strategy shift and org reshuffle. Data Science-related work eventually re-emerged as a priority (yay), but that moment was proof that possessing a positive attitude, an eagerness to learn and generalist skills can be very advantageous for one’s career - particularly when business circumstances are uncertain (aka startups).&lt;/p&gt;
+
+&lt;p&gt;Since then, a bunch of “unknown unknowns” I had about Product Management became “known unknowns” and some even “known knowns” (that’s enough Donald Rumsfeld for one day). Throughout this journey I am grateful to have worked alongside high-performing, communicative and product-savvy engineers who took great pride in shipping quality products - that made my interim role much easier!&lt;/p&gt;
+
+&lt;h2 id=&quot;observations-about-product-management&quot;&gt;Observations about Product Management&lt;/h2&gt;
+
+&lt;p&gt;Be warned; my views are clearly shaped from my own non-comprehensive experiences and research. Here is a loose collection of my observations:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Very few teams are really product teams;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;By that I am referring to the concept of the Empowered Product Team popularised by Marty Cragan in his book “Inspired”. Here is a concise list of relevant &lt;a href=&quot;https://svpg.com/product-team-faq/&quot;&gt;FAQ’s&lt;/a&gt; by the author. Whilst my current team is strongly autonomous, I’ve definitely worked in less empowered ones in the past.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;The Product Manager role is a full time job. Actually more than that;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;The cliché states that a PM is and acts as the CEO of their product. I find myself agreeing with it; to truly excel in this role, you need to be focussed on your product, your team, your business, the market and the competition. Once you break that down, it’s A LOT of work (as I discovered).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;A key to success is embracing uncertainty and not looking for immediate gratification&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;As alluded to above, I see a PM also as a kind of an in-house entrepreneur. Being able to break down uncertainty without pathologically hating it is very important for one’s mental health! Also, if transitioning from an individual contributor role, the dopamine hits from getting your PR merged, deploying a fix or getting a high F1-score from the first model you tried training are not there anymore. Gratification is a longer game for PM’s.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Colleagues: it’s all about your team;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Sharing a common goal with people where everyone is bought-in, motivated and feels rewarded by contributing to that goal is an amazing place to be. If you achieve that, never jeopardise it! Nurture and cultivate your relationship with everyone (and especially the Tech Lead)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;PM is not an exact science; jargon complicates things unnecessarily;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;I’ve discovered that PM jargon is overpowering. Surely, there are some practices/methodologies for shipping products that have been successful in some types of organisations and subsequently been given fancy names. But naturally, these cannot be implemented in the exact same way across different organisations. I’ve seen that teams and businesses eventually adopt what seems to work best for their own circumstances and dynamics. This might be my lack of experience speaking, but I don’t think that, for example, there is a deterministic template for defining “OKR’s” to different businesses, or that most “Kanban” teams actually practice Kanban. I feel that all these theories serve as inspiration to identify what works best with the constraints your business and your colleagues. So, naturally these words mean different things to different people and when I hear a lot of jargon flaunted about, I become uncomfortable.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Everyone seems to be complaining about JIRA, but few dare to challenge the status quo;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;That does say quite a lot already about this much maligned, but very successful, piece of software. That being said, I’d love to see how Basecamp would work one day!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Hiring the “right” Product Manager for your team is darn hard.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;hiring-product-managers&quot;&gt;Hiring Product Managers&lt;/h2&gt;
+
+&lt;p&gt;As mentioned above, a PM role is most definitely a full-time job. With me not willing to go down this path just yet, the time arrived to hand over the baton to a full-time, seasoned Product Manager! Only the matter of hiring them now. - and I thought that &lt;a href=&quot;https://alexiospanos.com/hiring-machine-learning-engineers-part-1/&quot;&gt;hiring Machine Learning Engineers&lt;/a&gt; was tricky…&lt;/p&gt;
+
+&lt;p&gt;In the past months, initially with the help of PM colleagues, I’ve set-up job specs, interview processes and take-home tasks, and had the chance to interview many talented individuals.&lt;/p&gt;
+
+&lt;p&gt;Here is my take, at this point, on the traits a PM must possess to have a chance of succeeding in an uncertain environment:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Experience shipping new products;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;This is more important than knowledge in the domain your business operates in. The domain knowledge can be gained fairly quickly, but learning how to ship and manage successful products is a longer process. To relax constraints, I believe individual contributors such as engineers, data scientists or product owners who have been part of empowered product teams can also be good candidates.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sharp thinking;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;I think this is pretty self-explanatory. Being able to think on one’s feet and connect the dots quickly is probably the top attribute for the “CEO of the product team”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Communication, communication, communication;&lt;/p&gt;
+
+    &lt;p&gt;I find precise communication very important, as the field is rife with jargon. Engineers and data scientists are alienated by product managers vending buzzwords. The ability to communicate with integrity with the team is a crucial factor for cultivating a team of missionaries, rather than mercenaries. Additionally, given the breadth of daily interactions PM’s have with stakeholders, dependency teams, and clients they should be able to adapt and communicate effectively at all levels.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Enthusiasm and curiosity;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Self-explanatory again, I think. A PM who doesn’t demonstrate enthusiasm about their product won’t take their team far. Also, not having a compulsive curiosity to learn, try and share knowledge about new things is in my eyes a necessary personality trait (also applies to Data Scientists).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Hands-on attitude;&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;PM’s need to know their product inside-out and be able to interrogate its operation and performance at any time. I would go as far to say that the PM should be able to spin up basic prototypes and mocks of products.&lt;/p&gt;
+
+    &lt;h2 id=&quot;tldr-product-managers-are-probably-the-most-important-roles-to-fill-in-a-young-business&quot;&gt;tl;dr: Product Managers are probably the most important roles to fill in a young business&lt;/h2&gt;
+
+    &lt;p&gt;I’ll eventually write a summary post about my take on how to ship successful products, when I’ve experienced a few more trial \&amp;amp; errors! The next one will hopefully be about Data Science stuff.&lt;/p&gt;
+
+    &lt;p&gt;Thanks for reading!&lt;/p&gt;
+
+    &lt;p&gt;PS: I’m currently reading &lt;a href=&quot;https://svpg.com/inspired-how-to-create-products-customers-love/&quot;&gt;INSPIRED: How to Create &lt;em&gt;Tech&lt;/em&gt; Products Customers Love&lt;/a&gt;. I am finding it very good - a little bit verbose for my taste though. Would love to have recommendations on good Product Management resources - hit me up on &lt;a href=&quot;https://twitter.com/alexiospanos&quot;&gt;Twitter&lt;/a&gt;!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Alex Spanos</name></author><summary type="html">Doubling up on my Data Scientist role, I did a stint as interim Product Manager for our product team. Here are my thoughts on Product Management and my observations on what it takes to succeed in high uncertainty environments (aka startups). And the million dollar question: how to hire a good Product Manager?</summary></entry><entry><title type="html">Hiring Machine Learning Engineers Part 2 - Job spec and assignment</title><link href="http://localhost:4000/hiring-machine-learning-engineers-part-2/" rel="alternate" type="text/html" title="Hiring Machine Learning Engineers Part 2 - Job spec and assignment" /><published>2019-09-08T00:00:00+01:00</published><updated>2019-09-08T00:00:00+01:00</updated><id>http://localhost:4000/hiring-machine-learning-engineers-part-2</id><content type="html" xml:base="http://localhost:4000/hiring-machine-learning-engineers-part-2/">&lt;p&gt;&lt;a href=&quot;https://alexiospanos.com/hiring-machine-learning-engineers-part-1/&quot;&gt;Part 1&lt;/a&gt; discussed the emergence of the Machine Learning Engineer role, its distinction from the Data Scientist and the importance of organisations prioritising hiring the former against the latter when data infrastructure maturity is low. In Part 2, we will cover more practical considerations around the hiring process.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-the-job-spec-right&quot;&gt;Get the job spec right&lt;/h2&gt;
+
+&lt;p&gt;If you’ve spent a bit of time looking at Data Scientist job listings, you’ll have certainly encountered specs containing an incoherent mess of random buzzwords:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“comfortable with Big Data technologies such as Hadoop”&lt;/li&gt;
+  &lt;li&gt;A bunch of overly prescriptive statistical/Machine Learning techniques (e.g. “k-means clustering”)&lt;/li&gt;
+  &lt;li&gt;A BI/Analytics mention (Tableau usually)&lt;/li&gt;
+  &lt;li&gt;A/B testing (always manages to sneak in somehow)&lt;/li&gt;
+  &lt;li&gt;AI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course these job specs are a major turn-off for anyone with experience in the field; a clear tell that the business have no idea why they need such a hire.&lt;/p&gt;
+
+&lt;p&gt;For Machine Learning Engineer specs in the wild, whilst I confess to not having seen as many, I’ve formed an impression that they are refreshingly less buzzwordy. However, there seems to be a tendency to overstate required skills/aptitudes on the modelling side.&lt;/p&gt;
+
+&lt;p&gt;As we’ve seen, Machine Learning Engineers operate across the stack and care about all those things that make modelling possible. These include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Setting up data pipelines and setting up the storage layers;&lt;/li&gt;
+  &lt;li&gt;designing APIs;&lt;/li&gt;
+  &lt;li&gt;orchestrating microservices;&lt;/li&gt;
+  &lt;li&gt;monitoring performance (operational and predictive);&lt;/li&gt;
+  &lt;li&gt;managing deployments in the various production environments;&lt;/li&gt;
+  &lt;li&gt;contributing to different engineering libraries, which can be written in a non “ML-native” programming language;&lt;/li&gt;
+  &lt;li&gt;finding and fixing production bugs;&lt;/li&gt;
+  &lt;li&gt;helping Data Scientists write more performant code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is so much going on for a Machine Learning Engineer to worry about, so when I see a relevant job spec that mentions Kaggle competitions and implementing arxiv NLP papers, I become a bit sceptical.&lt;/p&gt;
+
+&lt;p&gt;My general opinion for most roles, is that overly specific requirements do not benefit the hiring process.&lt;/p&gt;
+
+&lt;p&gt;It is a much better bet to describe in a bit more detail the actual responsibilities of the role rather than bloat the required experience and skills with redundant jargon. In a relevant tangent, I would strongly question the practical value of asking for specific academic qualifications. Does someone actually need a PhD to be a Machine Learning Engineer? In most cases it sounds like more of a cultural (or even vanity) requirement rather than a technical one.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-the-assignment-right&quot;&gt;Getting the assignment right&lt;/h2&gt;
+
+&lt;p&gt;Take-home assignments, when done right, provide value to both sides of the process regardless of the eventual outcome.&lt;/p&gt;
+
+&lt;p&gt;Nowadays, most companies include this step in the hiring process - and certainly a good candidate solution really boosts the chances of getting an offer! On the other hand, the assignment provides a great signal for the candidate to get a feel for the culture and tech maturity of the business.&lt;/p&gt;
+
+&lt;p&gt;In my opinion the assignment should be designed to give the hiring manager an insight into the candidate’s strengths and weaknesses, to further explore in a next stage. Its purpose should not be to extensively probe into all requirements of the role, and should be sufficiently open-ended to allow for originality and creativity to show. Also the trade-offs of making it specific to the business’ use case should be considered. Assessors will obviously be much more familiar with the nuances of the business problem, making the “battle” unfair for good candidates who don’t happen to have  that specific domain experience. An assignment with a more accessible use case that looks at the core skills required for the role could be more suitable in this sense, and an additional benefit is that it allows the candidate to put it up on their personal git page.&lt;/p&gt;
+
+&lt;p&gt;Specifically for Machine Learning Engineers, I believe a very suitable assignment is one that focuses on the end-to-end productionisation of a Machine Learning pipeline.  By stressing in the description that predictive performance is not the main objective of the assignment, it enables the candidate to demonstrate:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Knowledge in implementing basic Machine Learning pipelines;&lt;/li&gt;
+  &lt;li&gt;knowledge of software engineering practices such as testing, OOP, containerisation, logging and API/ CLI development.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;lA benefit of this type of task is evaluating candidates of different backgrounds; for software engineers moving in to the Machine Learning realm, the assessor can focus a bit more on the Machine Learning potential, whereas for Data Scientists moving into engineering, the assessor focuses on the software engineering potential. In the end, I think that this type of task can be very insightful and educational for more junior candidates, and fairly comfortable for more experienced candidates to show off their knowledge.&lt;/p&gt;
+
+&lt;p&gt;But above all, the assignment should respect the candidate both in terms of their time and their experience. In many cases, candidates will be applying to more than one places and also be in full-time employment. Also, the business must have faith in the hiring process. The best practice is to send out the assignment after recruiters screen the suitability of the candidate - the business must be in a position to trust the recruiters in their decision and not defer basic screening questions to the take-home assignment, as this can come across as very patronising to the candidate.&lt;/p&gt;
+
+&lt;p&gt;I’ve realised that a few assignments sent to me over the years were arguably inadequate. One example that stands out in my memory was for a unicorn scale-up; the recruiter forwarded a case study testing “verbal and numeric reasoning” and containing 5 sections on business understanding, ETL, statistics and coding. Each section had a points system and contained specific questions, which only took one correct answer. Having been working in the industry for a few years already, I thought this kind of test was too much; it was the kind of general aptitude test one would expect from a large enterprise’s graduate scheme. What annoyed me further was that I hadn’t even applied for the role - but had merely had an exploratory chat after the company’s recruiter reached out. It was a rather disappointing experience and remains the only time I declined to return an assignment.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Machine Learning Engineer assignment tips TL;DR:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Alex&lt;/em&gt;: “How to name the role is superficial. In the end of the day, Machine Learning Engineers or Data Scientists simply build the models and work with the team’s Software Engineers to integrate all those fancy models in production, right?”&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;u&gt;Employer&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;em&gt;Software Engineers in the room&lt;/em&gt;: [&lt;em&gt;…Produce Mona Lisa-esque smile. Awkward silence ensues…&lt;/em&gt;]&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Respect the candidate and their time!!&lt;/li&gt;
+    &lt;li&gt;Don’t make assignment overly specific to your business problem&lt;/li&gt;
+    &lt;li&gt;Test end-to-end productionisation skills, don’t focus on Machine Learning skills&lt;/li&gt;
+    &lt;li&gt;Reward candidate for their time by allowing them to push submission to their git portfolio&lt;/li&gt;
+  &lt;/ol&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;So the real difference only really clicked after having experienced first-hand what it takes to set up an autonomous data and ML-enabled product team.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;u&gt;Candidate&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;Don’t hesitate to ask for clarifications!&lt;/li&gt;
+    &lt;li&gt;Presentation is key: keep the submission readable and concise!!&lt;/li&gt;
+    &lt;li&gt;Provide an end-to-end solution: cover a bit of everything instead of going deep on one area (e.g. don’t skip unit tests in favour of a more complex modelling pipeline)&lt;/li&gt;
+    &lt;li&gt;Reproducility is key: virtual environments and Docker are your friends&lt;/li&gt;
+    &lt;li&gt;A Jupyter Notebook won’t cut it :)&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In the final part 3, I will discuss interviewing and having realistic expectations.&lt;/p&gt;</content><author><name>Alex Spanos</name></author><summary type="html">Part 1 discussed the emergence of the Machine Learning Engineer role, its distinction from the Data Scientist and the importance of organisations prioritising hiring the former against the latter when data infrastructure maturity is low. In Part 2, we will cover more practical considerations around the hiring process.</summary></entry><entry><title type="html">Hiring Machine Learning Engineers Part 1 - Context</title><link href="http://localhost:4000/hiring-machine-learning-engineers-part-1/" rel="alternate" type="text/html" title="Hiring Machine Learning Engineers Part 1 - Context" /><published>2019-09-02T00:00:00+01:00</published><updated>2019-09-02T00:00:00+01:00</updated><id>http://localhost:4000/hiring-machine-learning-engineers-part-1</id><content type="html" xml:base="http://localhost:4000/hiring-machine-learning-engineers-part-1/">&lt;p&gt;Recently, my team decided to hire for a &lt;em&gt;Machine Learning Engineer&lt;/em&gt;. Whilst considering the requirements for this role, a relatively new and ill-defined one in the industry, I found myself thinking about its contrast with the &lt;em&gt;Data Scientist&lt;/em&gt; - incidentally, the role I continue to identify mostly with.&lt;/p&gt;
+
+&lt;p&gt;In the recent past this kind of distinction only made academic sense to me. I will confess to subconsciously thinking that a Machine Learning Engineer is someone who took the &lt;a href=&quot;https://www.fast.ai/&quot;&gt;fast.ai&lt;/a&gt; course and now builds Deep Learning models on GPU’s, claiming out-of-the-world performances, without considering caveats and biases of the underlying datasets.&lt;/p&gt;
+
+&lt;p&gt;But the real differences only really clicked after having experienced first-hand what it takes to set up an autonomous data and ML-enabled product team.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Alex: “How to name the role is superficial. In the end of the day, Machine Learning Engineers or Data Scientists simply build the models and work with the team’s Software Engineers to integrate all those fancy models in production, right?”&lt;/p&gt;
+
+  &lt;p&gt;Software Engineers in the room: &lt;em&gt;…produce Mona Lisa-esque smile.. awkward silence ensues…&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;The hiring process itself, reviewing applications, assignment submissions and conducting video/onsite interviews with my Data Science/ML peers was an awesome experience, so I’d like to share some of my thoughts and observations, in the hope that they may prove useful for people on either side of the process.&lt;/p&gt;
 
-&lt;p&gt;The story is broken down into 2 parts:&lt;/p&gt;
+&lt;p&gt;The story is broken down into 3 parts:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Context;&lt;/li&gt;
-  &lt;li&gt;defining a hiring process.&lt;/li&gt;
+  &lt;li&gt;Context&lt;/li&gt;
+  &lt;li&gt;Job spec and assignment&lt;/li&gt;
+  &lt;li&gt;Interviewing and closing remarks.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;context&quot;&gt;Context&lt;/h2&gt;
 
-&lt;p&gt;Before jumping onto describing the Machine Learning Engineer role, it is useful to remember the evolution of its sibling, the Data Scientist.&lt;/p&gt;
+&lt;p&gt;Before jumping onto describing the Machine Learning Engineer, it is useful to remember the evolution of its sibling, the Data Scientist.&lt;/p&gt;
 
 &lt;p&gt;Nowadays, the unicorn halo crowning those Data Scientists who specialise in narrow scientific methodologies has generally fallen away. Typically, the most effective Data Scientist profiles in the industry, in most cases, combine scientific rigour and a product/business-first mentality - and rather crucially a strong will to become a “good programmer”.&lt;/p&gt;
 
-&lt;p&gt;Hence, the emergence of the &lt;a href=&quot;https://towardsdatascience.com/the-third-wave-data-scientist-1421df7433c9&quot;&gt;Third Wave Data Scientist,&lt;/a&gt; following its predecessor, the PoC Data Scientist and the ancestral Data Analyst variant. Having experienced these transitions first hand, it now feels like the industry, at least in its major hubs, is learning to put Machine Learning practitioners to use much more effectively.&lt;/p&gt;
+&lt;p&gt;Hence, the emergence of the Third Wave Data Scientist (link at the), following its predecessor the &lt;em&gt;proof-of-concept&lt;/em&gt; Data Scientist, and the ancestral Data Analyst variant. Having experienced these transitions first hand, it now feels like the industry, at least in its major hubs, is learning to put Machine Learning practitioners to use much more effectively.&lt;/p&gt;
 
-&lt;p&gt;This evolution is part of an overall tech ecosystem evolution fuelled by ever-increasing venture capital and the ensuing explosive birth rate of startups requiring “jacks-of-all trades”- and is closely linked to the proliferation of the Machine Learning Engineer, following that of the &lt;a href=&quot;https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7&quot;&gt;Data Engineer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is part of an overall tech ecosystem evolution fuelled by ever-increasing venture capital and the ensuing explosive birth rate of startups requiring “jacks-of-all trades”- and is closely linked to the proliferation of the Machine Learning Engineer, following that of the Data Engineer.&lt;/p&gt;
 
-&lt;p&gt;As tech history teaches us, nomenclature is transient; at the moment it means different things at different places. But today what really matters is that it doesn’t make sense to place hard borders between roles and teams. I won’t go into too much detail here, as a bunch of amazing tech blogs have already &lt;a href=&quot;http://nlathia.github.io/2019/08/13/Machine-learning-faster/&quot;&gt;covered this extensively&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As tech history teaches us, nomenclature is transient; at the moment it means different things at different places. But today what really matters is that it doesn’t make sense to place hard borders between roles and teams. I won’t go into too much detail here, as a bunch of amazing tech blogs have already covered this extensively.&lt;/p&gt;
 
 &lt;p&gt;So you will be spared the cringe of another Venn Diagram; it suffices to say that the set of common skills across all areas is becoming increasingly larger over time. A modern ML-powered team requires flexibility and interchangeability of duties.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;On a side note I can’t resist: the football nerd in me sees a strong parable with Total Football, a revolutionary football system born in Holland in the 1960s. In Total Football no outfield player had a fully deterministic role; any player could attack an area traditionally “owned” by another teammate, who would in turn have to cover the area exposed by the attacker. As a style of play, it was simultaneously incredibly stylish but also very successful in terms of gaining a competitive advantage; I would also assume that it made footballers enjoy their job more!&lt;/em&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;em&gt;On a side note I can’t resist: the football nerd in me sees a strong parable with Total Football, a revolutionary football system born in Holland in the 1960s. In Total Football, no outfield player had a fully deterministic role; any player could attack an area traditionally “owned” by another teammate, who would in turn have to cover the area exposed by the attacker. As a style of play, it was simultaneously incredibly stylish but also very successful in terms of gaining a competitive advantage; I would also assume that it made footballers enjoy their job more!&lt;/em&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;strong&gt;*Sketch&lt;/strong&gt; : *Total Football intuition** (taken from &lt;a href=&quot;https://www.imperial.ac.uk/business-school/intelligence/student-blog/can-total-football-work-organisations/&quot;&gt;Imperial BS Student Blog&lt;/a&gt;, where someone had similar thoughts with me):&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Sketch&lt;/strong&gt; : &lt;strong&gt;Total Football intuition&lt;/strong&gt; (taken from Imperial BS Student Blog, where someone had similar thoughts with me):&lt;/p&gt;
 
   &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/W5LzxMi.png&quot; alt=&quot;total football&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;But don’t get me wrong: whilst duties of ML-powered team members overlap significantly, I believe there are important differences, particularly between the desirable &lt;strong&gt;mentalities&lt;/strong&gt; of Machine Learning Engineers and Data Scientists.&lt;/p&gt;
-
-&lt;p&gt;This &lt;a href=&quot;https://medium.com/@tomaszdudek/but-what-is-this-machine-learning-engineer-actually-doing-18464d5c699&quot;&gt;blog post&lt;/a&gt; very nicely outlines what a Machine Learning Engineer cares about: TL;DR the clue is in the name!&lt;/p&gt;
+&lt;p&gt;But as mentioned above, whilst duties of ML-powered team members overlap significantly, there are important differences, particularly between the desirable &lt;strong&gt;mentalities&lt;/strong&gt; of Machine Learning Engineers and Data Scientists.&lt;/p&gt;
 
 &lt;p&gt;A Machine Learning &lt;em&gt;Engineer&lt;/em&gt; is &lt;strong&gt;a doer&lt;/strong&gt;, essentially a Software Engineer in disguise. They are able to implement the end-to-end workflow required for deploying an ML service within an organisations’ existing tech infrastructure.&lt;/p&gt;
 
-&lt;p&gt;Speaking the DevOps and Backend Engineering languages, they are the ones who make the work of model-building Data Scientists possible and in comparison their technical responsibilities are much broader and more fundamental.&lt;/p&gt;
+&lt;p&gt;Speaking the DevOps and Backend Engineering languages, they are the ones who make the work of model-building Data Scientists possible and in comparison their technical responsibilities are much broader and more fundamental. When not deploying models to production, you will find them building data pipelines, improving monitoring capabilities and tinkering with nascent Machine Learning libraries in exotic programming languages. Whilst constantly fixing bugs across the stack.&lt;/p&gt;
 
-&lt;p&gt;In contrast, a Data &lt;em&gt;Scientist&lt;/em&gt; is primarily &lt;strong&gt;a thinker&lt;/strong&gt;, whose main task is coming up with data-driven ways of solving a business/product problem - and then try to solve it.&lt;/p&gt;
+&lt;p&gt;In contrast, a Data &lt;em&gt;Scientist&lt;/em&gt; is primarily &lt;strong&gt;a thinker&lt;/strong&gt;, whose main task is coming up with data-driven ways of solving a business/product problem - and then actually solving it. They tend to spend more time with the product side of organisations and eventually learn to condense high-level “business” talk into a set of analytical tasks.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Data &lt;em&gt;Scientists&lt;/em&gt; exercise failing; Machine Learning &lt;em&gt;Engineers&lt;/em&gt; exercise &lt;strong&gt;not&lt;/strong&gt; failing.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Failing productively is a major skill for Data Scientists to develop, as their days are spent eliminating paths defined by their experimentation plan. In contrast, Machine Learning Engineers dream of their end-to-end production workflow working faultlessly like clockwork; failure is abhorrent!&lt;/p&gt;
+&lt;p&gt;The clue is in the name.&lt;/p&gt;
+
+&lt;p&gt;Failing productively is a major skill for Data Scientists to develop, as their days are spent eliminating paths defined by their experimentation plan. In contrast, Machine Learning Engineers dream of their end-to-end production workflow working faultlessly like clockwork; to them failure is abhorrent!&lt;/p&gt;
 
 &lt;h2 id=&quot;so-whom-to-hire&quot;&gt;So, whom to hire?&lt;/h2&gt;
 
@@ -64,16 +240,28 @@
 &lt;p&gt;Bringing in Machine Learning Engineers early to work with Software Engineers has multiple benefits, as&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;They can participate and outline Data Science-related requirements to Engineers building out data infrastructure and pipelines;&lt;/li&gt;
+  &lt;li&gt;They can participate and outline Data Science-related requirements to Engineers building out data infrastructure and pipelines; and&lt;/li&gt;
   &lt;li&gt;they are capable of building end-to-end prototype workflows, thus setting the ground for Data Scientists to become quickly productive.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;But if the business has not ironed out its data infrastructure,  Data Scientists are not the right hire in the short term. Data is oxygen for them, and its absence is detrimental for both job satisfaction and productivity. In the longer term, the infusion of a scientific mindset and the value-add provided by Data Scientists can become a major asset and differentiator for businesses. But in most cases that comes later in the journey: Peadar Coyle’s advice is still helpful today: &lt;a href=&quot;https://peadarcoyle.com/2017/07/23/avoiding-being-a-trophy-data-scientist/&quot;&gt;avoid becoming a trophy Data Scientist&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But if the business has not ironed out its data infrastructure,  Data Scientists are not the right hire in the short term. Data is oxygen for them, and its absence is detrimental for both job satisfaction and productivity. In the longer term, the infusion of a scientific mindset and the value-add provided by Data Scientists can become a major asset and a differentiator for businesses. But in most cases that comes later in the journey: in the meanwhile, avoid becoming a trophy Data Scientist!&lt;/p&gt;
 
 &lt;h2 id=&quot;next-post-preview&quot;&gt;Next post preview&lt;/h2&gt;
-&lt;p&gt;In part 2, I will cover how to define a hiring process for a Machine Learning Engineer:&lt;/p&gt;
+
+&lt;p&gt;In Part 2, I will cover how to define a hiring process for a Machine Learning Engineer:&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Articulating role responsibilities;&lt;/li&gt;
-  &lt;li&gt;using a take-home task as a means of mutual education and communication;&lt;/li&gt;
-  &lt;li&gt;having realistic expectations.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Alex Spanos</name></author><summary type="html">Recently, my team found ourselves hiring for a Machine Learning Engineer. Whilst considering the requirements for this role, a relatively new and ill-defined one in the industry, I found myself thinking about its contrast with the Data Scientist - incidentally, the role I continue to identify mostly with.</summary></entry></feed>
+  &lt;li&gt;Articulating role responsibilities&lt;/li&gt;
+  &lt;li&gt;Using a take-home task as a means of mutual education and communication.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/the-third-wave-data-scientist-1421df7433c9&quot;&gt;The Third Wave Data Scientist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7&quot;&gt;Data Engineers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nlathia.github.io/2019/08/13/Machine-learning-faster/&quot;&gt;Machine Learning faster&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.imperial.ac.uk/business-school/intelligence/student-blog/can-total-football-work-organisations/&quot;&gt;Can ‘Total Football’ work in organisations?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@tomaszdudek/but-what-is-this-machine-learning-engineer-actually-doing-18464d5c699&quot;&gt;But what is this Machine Learning Engineer actually doing?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://peadarcoyle.com/2017/07/23/avoiding-being-a-trophy-data-scientist&quot;&gt;Avoiding being a trophy Data Scientist&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Alex Spanos</name></author><summary type="html">Recently, my team decided to hire for a Machine Learning Engineer. Whilst considering the requirements for this role, a relatively new and ill-defined one in the industry, I found myself thinking about its contrast with the Data Scientist - incidentally, the role I continue to identify mostly with.</summary></entry></feed>
