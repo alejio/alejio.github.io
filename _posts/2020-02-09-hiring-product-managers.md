@@ -62,7 +62,7 @@ Here is my take, at this point, on the traits a PM must possess to have a chance
 
    I think this is pretty self-explanatory. Being able to think on one's feet and connect the dots quickly is probably the top attribute for the "CEO of the product team".  
 
-3. Communication, communication, communication;
+3. **Communication, communication, communication;**
 
    I find precise communication very important, as the field is rife with jargon. Engineers and data scientists are alienated by product managers vending buzzwords. The ability to communicate with integrity with the team is a crucial factor for cultivating a team of missionaries, rather than mercenaries. Additionally, given the breadth of daily interactions PM's have with stakeholders, dependency teams, and clients they should be able to adapt and communicate effectively at all levels.
 
