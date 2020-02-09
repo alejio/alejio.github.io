@@ -78,7 +78,7 @@ Here is my take, at this point, on the traits a PM must possess to have a chance
 
    ## tl;dr: Product Managers are probably the most important roles to fill in a young business
 
-   I'll eventually write a summary post about my take on how to ship successful products, when I've experienced a few more trial \& errors! The next one will hopefully be about Data Science stuff. 
+   I'll eventually write a summary post about my take on how to ship successful products, when I've experienced a few more trial & errors! The next one will hopefully be about Data Science stuff. 
 
    
 
