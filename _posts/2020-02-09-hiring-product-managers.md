@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hiring Product Managers; a different beast!
+title: Product Management, a different creature!
 categories: [Product Management]
 ---
 
