@@ -14,7 +14,7 @@ Startup life can be quite unpredictable. I hadn't imagined when I joined as a "D
 
 That was still the case when I was formally given the "interim" PM role for one of the core product teams in April 2019, following a global short-term product strategy shift and org reshuffle. Data Science-related work eventually re-emerged as a priority (yay), but that moment was proof that possessing a positive attitude, an eagerness to learn and generalist skills can be very advantageous for one's career - particularly when business circumstances are uncertain (aka startups).
 
-Since then, a bunch of "unknown unknowns" I had about Product Management became "known unknowns" and some even "known knowns" (that's enough Donald Rumsfeld for one day). Throughout this journey I am grateful to have worked alongside high-performing, communicative and product-savvy engineers who took great pride in shipping quality products - that made my interim role much easier! 
+Since then, a bunch of "unknown unknowns" I had about Product Management became "known unknowns" and some even "known knowns" (that's enough Donald Rumsfeld for one day). Throughout this journey I am grateful to have worked alongside high-performing, communicative and product-savvy engineers who took great pride in shipping quality products - that made my interim role much easier!
 
 ## Observations about Product Management
 
@@ -26,7 +26,7 @@ Be warned; my views are clearly shaped from my own non-comprehensive experiences
 
 2. **The Product Manager role is a full time job. Actually more than that;**
 
-   The cliché states that a PM is and acts as the CEO of their product. I find myself agreeing with it; to truly excel in this role, you need to be focussed on your product, your team, your business, the market and the competition. Once you break that down, it's A LOT of work (as I discovered).
+   The cliché states that a PM is and acts as the CEO of their product. I find myself agreeing with it; to truly excel in this role, you need to be focussed on your customers, your product, your team, your business, the market and the competition. And other things. Once you break that down, it's A LOT of work (as I discovered).
 
 3. **A key to success is embracing uncertainty and not looking for immediate gratification**
 
@@ -38,7 +38,7 @@ Be warned; my views are clearly shaped from my own non-comprehensive experiences
 
 5. **PM is not an exact science; jargon complicates things unnecessarily;**
 
-   I've discovered that PM jargon is overpowering. Surely, there are some practices/methodologies for shipping products that have been successful in some types of organisations and subsequently been given fancy names. But naturally, these cannot be implemented in the exact same way across different organisations. I've seen that teams and businesses eventually adopt what seems to work best for their own circumstances and dynamics. This might be my lack of experience speaking, but I don't think that, for example, there is a deterministic template for defining "OKR's" to different businesses, or that most "Kanban" teams actually practice Kanban. I feel that all these theories serve as inspiration to identify what works best with the constraints your business and your colleagues. So, naturally these words mean different things to different people and when I hear a lot of jargon flaunted about, I become uncomfortable. 
+   I've discovered that PM jargon is overpowering. Surely, there are some practices/methodologies for shipping products that have been successful in some types of organisations and subsequently been given fancy names. But naturally, these cannot be implemented in the exact same way across different organisations. I've seen that teams and businesses eventually adopt what seems to work best for their own circumstances and dynamics. This might be my lack of experience speaking, but I don't think that, for example, there is a deterministic template for defining "OKR's" to different businesses, or that most "Kanban" teams actually practice Kanban. I feel that all these theories serve as inspiration to identify what works best with the constraints your business and your colleagues. So, naturally these words mean different things to different people and when I hear a lot of jargon flaunted about, I become uncomfortable.
 
 6. **Everyone seems to be complaining about JIRA, but few dare to challenge the status quo;**
 
@@ -56,11 +56,11 @@ Here is my take, at this point, on the traits a PM must possess to have a chance
 
 1. **Experience shipping new products;**
 
-   This is more important than knowledge in the domain your business operates in. The domain knowledge can be gained fairly quickly, but learning how to ship and manage successful products is a longer process. To relax constraints, I believe individual contributors such as engineers, data scientists or product owners who have been part of empowered product teams can also be good candidates.  
+   This is more important than knowledge in the domain your business operates in. The domain knowledge can be gained fairly quickly, but learning how to ship and manage successful products is a longer process. To relax constraints, I believe individual contributors such as engineers, data scientists or product owners who have been part of empowered product teams can also be good candidates.
 
 2. **Sharp thinking;**
 
-   I think this is pretty self-explanatory. Being able to think on one's feet and connect the dots quickly is probably the top attribute for the "CEO of the product team".  
+   I think this is pretty self-explanatory. Being able to think on one's feet and connect the dots quickly is probably the top attribute for the "CEO of the product team".
 
 3. **Communication, communication, communication;**
 
@@ -74,19 +74,16 @@ Here is my take, at this point, on the traits a PM must possess to have a chance
 
    PM's need to know their product inside-out and be able to interrogate its operation and performance at any time. I would go as far to say that the PM should be able to spin up basic prototypes and mocks of products.
 
-   
+
 
    ## tl;dr: Product Managers are probably the most important roles to fill in a young business
 
-   I'll eventually write a summary post about my take on how to ship successful products, when I've experienced a few more trial & errors! The next one will hopefully be about Data Science stuff. 
+   I'll eventually write a summary post about my take on how to ship successful products, when I've experienced a few more trial & errors! The next one will hopefully be about Data Science stuff.
 
-   
+
 
    Thanks for reading!
-   
-   
-   
-   PS: I'm currently reading [INSPIRED: How to Create *Tech* Products Customers Love](https://svpg.com/inspired-how-to-create-products-customers-love/). I am finding it very good - a little bit verbose for my taste though. Would love to have recommendations on good Product Management resources - hit me up on [Twitter](https://twitter.com/alexiospanos)!
-   
-   
 
+
+
+   PS: I'm currently reading [INSPIRED: How to Create *Tech* Products Customers Love](https://svpg.com/inspired-how-to-create-products-customers-love/). I am finding it very good - a little bit verbose for my taste though. Would love to have recommendations on good Product Management resources - hit me up on [Twitter](https://twitter.com/alexiospanos)!
