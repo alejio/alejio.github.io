@@ -68,7 +68,7 @@ Here is my take, at this point, on the traits a PM must possess to have a chance
 
 4. **Enthusiasm and curiosity;**
 
-   Self-explanatory again, I think. A PM who doesn't demonstrate enthusiasm about their product won't take their team far. Also, not having a compulsive curiosity to learn, try and share knowledge about new things is in my eyes a necessary personality trait (also applies to Data Scientists).
+   Self-explanatory again, I think. A PM who doesn't demonstrate enthusiasm about their product won't take their team far. Also, having a compulsive curiosity to learn, try new things and share the knowledge is in my eyes a necessary personality trait (also applies to Data Scientists).
 
 5. **Hands-on attitude;**
 
