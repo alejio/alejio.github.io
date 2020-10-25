@@ -4,7 +4,7 @@ title: From Geophysicist to "Data Scientist"
 categories: [Data Science, Career]
 ---
 
-Many highly skilled Geophysicists are currently considering a career change to "Data Science". Leaning on my brief time as a Data Processing Geophysicist, I would like to shed some light on the commonalities and dissimilarites of this role with Data Science.
+Many highly skilled Geophysicists are currently considering a career change to "Data Science". Leaning on my brief time as a Data Processing Geophysicist, I would like to shed some light on the commonalities and dissimilarities of this role with Data Science.
 
 ## The picture today
 
