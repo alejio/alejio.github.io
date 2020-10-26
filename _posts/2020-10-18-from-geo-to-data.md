@@ -82,7 +82,7 @@ Allocating time to stay on top of developments in tech and Data Science is almos
 
 ## The longer version: Geophysicists and Data Science
 
-> **Image** : **Seismic data** (*it's painful to look at but there is a crazy amount of info packed into this ugly grayscale image*):
+> **Image** : **Seismic data [source](https://www.offshore-mag.com/geosciences/article/14178747/tgs-pgs-issue-offshore-labrador-3d-seismic-data)** (*it's painful to look at but there is a crazy amount of info packed into this ugly grayscale image*):
 >
 > ![seismic data section](../images/posts/torngat_3d_seismic_data.5efb8570f05ad.png)
 
@@ -114,3 +114,7 @@ At the end of my internship the company made me a *real* job offer, my first, wh
 Over the next couple of years I learned much about this niche and closed industry, and Geophysicists. At some point though I realised that facilitating hydrocarbons extraction was not what I wanted to do in my career, so  it was time for a change.
 
 For me, the Data Scientist path was the most natural one to follow, based on my good Mathematics/Statistics/ML academics and relevant previous industry experience. But pivoting to a role with "Data Scientist" in the job title back in 2015 was the **hardest** thing I have done career-wise. It was frustrating that the Geo experience seemed "alien" to almost all recruiters and employers I spoke with! So I had to learn to convey succinctly what on earth (no pun intended) my job was about and how it was relevant. Thankfully there were plenty of opportunities for me to practice and refine the pitch and eventually a company gave me the chance I'd been hoping for.
+
+## Epilogue
+
+Pivoting careers is not easy. In the case of the Geophysicist, this is compounded by the role's relative obscurity. But persistence, tailored applications, demonstrable motivation and commitment to the desired target along with succinct communication will eventually pay off!
