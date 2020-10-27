@@ -16,20 +16,18 @@ This situation might paint an intimidating picture for Geophysicists looking to 
 
 With this post I want to achieve 2 goals:
 
-> **1. Raise awareness to employers/recruiters** that Geophysicists are true multidisciplinary beasts that can potentially be great hires for Data Science roles
+> **1. Raise  employer/recruiter awareness** that Geophysicists are true multidisciplinary beasts that can potentially be great hires for Data Science roles
 
 > **2. Help Geophysicists identify and "market" their transferrable skills**, and understand the core improvement areas with the highest leverage.
 
 
-**!Disclaimer!**: My perspective draws from my experience working as a "Time Processing" Geophysicist in marine seismic data processing 5 years ago. It was considered the less illustrious precursor for "Depth Imaging", which perhaps required a slightly different set of aptitudes. In either case, my opinions could be to some extent outdated and too generic.
-
+**!Disclaimer!**: My perspective draws from my experience working as a "Time Processing" Geophysicist in marine seismic data processing 5 years ago. It was considered the less illustrious precursor for "Depth Imaging", which perhaps required a slightly different set of aptitudes. Therefore, my opinions could be to some extent outdated and too generic.
 
 ## TL;DR
 
 ### What Geophysicists do (at a super high level)
 
-Seismic data is acquired by stimulating the earth with high energy seismic waves, that is subsequently reflected by the various geological layers and collected by specialised receivers on the surface. Geophysicists process and model this data to transform it into a 3D image of the subsurface. Oil & Gas companies buy these images at a steep price and analyse them to identify pockets of geology with high probability of extractable hydrocarbons.
-
+Seismic data is acquired by stimulating the earth with high energy seismic waves, that are subsequently reflected by the various geological layers and collected by specialised receivers on the surface. Geophysicists process and model this data to transform it to a 3D image of the subsurface. Oil & Gas companies buy these images at a steep price and analyse them to identify pockets of geology with high probability of extractable hydrocarbons.
 
 ### Geophysicist strengths
 
@@ -79,7 +77,6 @@ The dysfunctions of waterfall usually outweigh the pros in my experience. [Marty
 
 Allocating time to stay on top of developments in tech and Data Science is almost a prerequisite nowadays. The open culture of the field is quite in contrast to the Oil & Gas sector. Being proactive in broadening one's horizons by following key Twitter accounts, news sources, Github profiles, etc is very important.
 
-
 ## The longer version: Geophysicists and Data Science
 
 > **Image** : **Seismic data [source](https://www.offshore-mag.com/geosciences/article/14178747/tgs-pgs-issue-offshore-labrador-3d-seismic-data)** (*it's painful to look at but there is a crazy amount of info packed into this ugly grayscale image*):
@@ -95,7 +92,7 @@ Interestingly, during my time, grid-searching was not realistic due to computati
 
 In the start of each processing step geos create a testing plan, a peer-reviewed and audited first class citizen of the project management process. The motivation behind this is the magnitude of processing required. We're talking TB's of data going through each processing step. Runs can take days! So getting the workflow wrong has big $$ implications. This situation forces the Geo to be rather deliberate about what they test and why based on the peculiarities of the dataset. And really importantly, Geos learn to test the effect of *one intervention at a time*.
 
-Arguably, it just happens that this **is** science. And in my career as Data Scientist I have rarely seen people show a similar level of diligence in organising their assembly of preprocessing, feature engineering and modelling pipelines. Disorganised testing with little understanding of the underlying dataset quirks almost always leads to suboptimal results and missed optimisation opportunities. Yet still, this is usually the status quo. Automation does not offer a silver bullet; the cardinality of preprocessing, feature engineering and modelling workflow configurations is way too large to grid-search. But a thoughtful testing plan can constrains that set down significantly. So I think that the Geophysicist learnt scientific approach over testing is a big big plus!
+Arguably, it just happens that this **is** science. And in my career as Data Scientist I have rarely seen people show a similar level of diligence in organising their assembly of preprocessing, feature engineering and modelling pipelines. Disorganised testing with little understanding of the underlying dataset quirks almost always leads to suboptimal results and missed optimisation opportunities. Yet still, this is usually the status quo. Automation does not offer a silver bullet; the cardinality of preprocessing, feature engineering and modelling workflow configurations is way too large to grid-search. But a thoughtful testing plan can constrain that set down significantly. So I think that the Geophysicist's scientific approach over testing is a big big plus!
 
 In terms of project management, it was very very waterfall. Processing is broken down into steps, each of which is very meticulously planned. I was "lucky" to experience how waterfall can go wrong. Unrealistic delivery estimates and client problems/surprises with big-bang deliverables were clear artefacts of this style of project management. This frequently put Geos under considerable pressure to deliver against strict contractual deadlines - and when your clients are Oil & Gas multinationals then the pressure is even more on!
 
@@ -103,7 +100,7 @@ Working in Agile teams is a pretty big departure from this style of working, and
 
 ## My short career as a Geophysicist
 
-As an MSc student at the University of Leeds back in 2012, I was offered an opportunity to do a internship, as part of my dissertation. (At a real, global company based in the UK! And I would get a salary!!)
+As an MSc student at the University of Leeds back in 2012, I was offered an opportunity to do an internship, as part of my dissertation. (At a real, global company based in the UK! And I would get a salary!!)
 
 The company that would host me was a big player in "Oil & Gas services" doing "marine seismic data acquisition and imaging". As a Statistics student that meant little to me at first. I soon found out that the company operated a fleet of ships that recorded subsurface data (seismic waves reflected by the subsurface after being "bombarded" by acoustic energy from airguns pointing towards it) which would be processed onshore to create 3D images. Oil & Gas companies would buy these image datasets (biiig data in tape format), and analyse them to pinpoint locations with a reasonable probability of extractable hydrocarbons.
 
