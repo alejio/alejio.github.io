@@ -12,7 +12,7 @@ languageCode = "en"
 languageName = "English"
 
 # google analytics code [UA-XXXXXXXX-X]
-googleAnalytics = ""
+googleAnalytics = "UA-146892472-1"
 
 # copyright description used only for seo schema
 copyright = ""
