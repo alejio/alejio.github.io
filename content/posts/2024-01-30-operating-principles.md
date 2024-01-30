@@ -59,4 +59,4 @@ As a disclaimer, this is not an attempt to replicate the [DataOps Manifesto](htt
 
 
 ## Acknowledgements
-Thanks to Derek Lakin and Paul Graham for inspiring me to get back into essaying. Derek made me realise that taking the time to reflect in written form is an absolute life and career hack. I will not use any AI here: this would completely defeat the purpose. So, if it's a terrible read, do let me know, as I would selfishly like to improve my own neural network with your feedback. 
+Thanks to my colleague Derek Lakin and the writings of Paul Graham for inspiring me to get back into essaying. Derek made me realise that taking the time to reflect in written form is an absolute life and career hack. I will not use any AI here: this would completely defeat the purpose. So, if it's a terrible read, do let me know, as I would selfishly like to improve my own neural network with your feedback. 
