@@ -55,7 +55,7 @@ copyright = ""
 
 [params]
   # site default theme ["auto", "light", "dark"]
-  defaultTheme = "auto"
+  defaultTheme = "light"
   # public git repo url only then enableGitInfo is true
   # LoveIt NEW | 0.2.0 date format
   dateFormat = "02-01-2006"
