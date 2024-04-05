@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Product Management - Category - Alex Spanos</title>
-        <link>http://alejio.github.io/categories/product-management/</link>
+        <link>http://localhost:1313/categories/product-management/</link>
         <description>Product Management - Category - Alex Spanos</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 09 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://alejio.github.io/categories/product-management/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 09 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/product-management/" rel="self" type="application/rss+xml" /><item>
     <title>Product Management, a different creature!</title>
-    <link>http://alejio.github.io/posts/2020-02-09-hiring-product-managers/</link>
+    <link>http://localhost:1313/posts/2020-02-09-hiring-product-managers/</link>
     <pubDate>Sun, 09 Feb 2020 00:00:00 &#43;0000</pubDate>
     <author>Alex Spanos</author>
-    <guid>http://alejio.github.io/posts/2020-02-09-hiring-product-managers/</guid>
+    <guid>http://localhost:1313/posts/2020-02-09-hiring-product-managers/</guid>
     <description><![CDATA[Doubling up on my Data Scientist role, I did a stint as interim Product Manager for our product team. Here are my thoughts on Product Management and my observations on what it takes to succeed in high uncertainty environments (aka startups). And the million dollar question: how to hire a good Product Manager?
 A Data Scientist&rsquo;s roundtrip to Product Management Startup life can be quite unpredictable. I hadn&rsquo;t imagined when I joined as a &ldquo;Data Scientist&rdquo; 1.]]></description>
 </item>
