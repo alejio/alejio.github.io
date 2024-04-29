@@ -62,7 +62,7 @@ copyright = ""
   # website title for Open Graph and Twitter Cards
   title = ""
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "An assortment of opinions, reflections and semi-relevant tangents of a Data Scientist navigating the uncertain waters of startup life."
+  description = "My Data blog"
   # website images for Open Graph and Twitter Cards
   # images = ["/logo.png"]
 
@@ -137,7 +137,7 @@ copyright = ""
       # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "An assortment of opinions, reflections and semi-relevant tangents of a Data Scientist navigating the uncertain waters of startup life."
+      subtitle = "My Data blog"
       # whether to use typeit animation for subtitle
       typeit = false
       # whether to show social links
