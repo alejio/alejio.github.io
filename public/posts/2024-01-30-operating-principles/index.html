@@ -4,19 +4,24 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Data Operating Principles - Alex Spanos</title><meta name="Description" content="An assortment of opinions, reflections and semi-relevant tangents of a Data Scientist navigating the uncertain waters of startup life."><meta property="og:title" content="Data Operating Principles" />
-<meta property="og:description" content="Data leadership playbooks or operating principles? Embarking on a Head of Data role without previous leadership and people management experience was a challenge interesting enough. Having made a bunch of mistakes and another bunch of good calls, I think it is a good time to write about the experience in the hope that I will have learned something through reflection. Also taking this leap of courage to publish, as some people may who have already been on a similar journey, or are preparing to embark on one might find it a useful input." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/2024-01-30-operating-principles/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-30T15:38:13+00:00" />
-<meta property="article:modified_time" content="2024-01-30T15:38:13+00:00" />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Data Operating Principles"/>
-<meta name="twitter:description" content="Data leadership playbooks or operating principles? Embarking on a Head of Data role without previous leadership and people management experience was a challenge interesting enough. Having made a bunch of mistakes and another bunch of good calls, I think it is a good time to write about the experience in the hope that I will have learned something through reflection. Also taking this leap of courage to publish, as some people may who have already been on a similar journey, or are preparing to embark on one might find it a useful input."/>
-      <meta name="twitter:site" content="@alexiospanos"/>
+        <title>Data Operating Principles - Alex Spanos</title><meta name="Description" content="My Data blog"><meta property="og:url" content="http://localhost:1313/posts/2024-01-30-operating-principles/">
+  <meta property="og:site_name" content="Alex Spanos">
+  <meta property="og:title" content="Data Operating Principles">
+  <meta property="og:description" content="Data leadership playbooks or operating principles? Embarking on a Head of Data role without previous leadership and people management experience was a challenge interesting enough. Having made a bunch of mistakes and another bunch of good calls, I think it is a good time to write about the experience in the hope that I will have learned something through reflection. Also taking this leap of courage to publish, as some people may who have already been on a similar journey, or are preparing to embark on one might find it a useful input.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-01-30T15:38:13+00:00">
+    <meta property="article:modified_time" content="2024-01-30T15:38:13+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Data Operating Principles">
+  <meta name="twitter:description" content="Data leadership playbooks or operating principles? Embarking on a Head of Data role without previous leadership and people management experience was a challenge interesting enough. Having made a bunch of mistakes and another bunch of good calls, I think it is a good time to write about the experience in the hope that I will have learned something through reflection. Also taking this leap of courage to publish, as some people may who have already been on a similar journey, or are preparing to embark on one might find it a useful input.">
+      <meta name="twitter:site" content="@alexiospanos">
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2024-01-30-operating-principles/" /><link rel="prev" href="http://localhost:1313/posts/2020-10-18-from-geo-to-data/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2024-01-30-operating-principles/" /><link rel="prev" href="http://localhost:1313/posts/2020-10-18-from-geo-to-data/" /><link rel="next" href="http://localhost:1313/posts/2024-10-20-bias-detection-in-news-gcp/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -40,17 +45,20 @@
 
         <div id="mask"></div><div class="wrapper"><head>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQB3XPKYKM"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-ZQB3XPKYKM', { 'anonymize_ip': false });
-}
-</script>
-
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQB3XPKYKM"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZQB3XPKYKM');
+        }
+      </script>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQB3XPKYKM"></script>
     <script>
@@ -170,7 +178,8 @@ if (!doNotTrack) {
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/2020-10-18-from-geo-to-data/" class="prev" rel="prev" title="From Geophysicist to &#34;Data Scientist&#34;"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>From Geophysicist to "Data Scientist"</a></div>
+    <div class="post-nav"><a href="/posts/2020-10-18-from-geo-to-data/" class="prev" rel="prev" title="From Geophysicist to &#34;Data Scientist&#34;"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>From Geophysicist to "Data Scientist"</a>
+            <a href="/posts/2024-10-20-bias-detection-in-news-gcp/" class="next" rel="next" title="Detecting Bias in News Items - part 1">Detecting Bias in News Items - part 1<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main></div>

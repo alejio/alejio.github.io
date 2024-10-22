@@ -54,6 +54,9 @@ copyright = ""
     title = ""
 
 [params]
+  author = "Alex Spanos"
+  link = ""
+  email = ""
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "light"
   # public git repo url only then enableGitInfo is true
