@@ -1,7 +1,6 @@
 ---
 title: "Tracking AI bias in the news"
 date: 2024-10-20T21:12:09+01:00
-draft: true
 ---
 
 
