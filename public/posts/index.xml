@@ -9,19 +9,9 @@
     <pubDate>Sun, 20 Oct 2024 21:12:09 &#43;0100</pubDate>
     <author>Author</author>
     <guid>http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/</guid>
-    <description><![CDATA[<p>Kicking off a series of N posts showing the development of a webapp that tracks bias of news articles relating to AI.</p>
+    <description><![CDATA[<p>Kicking off a series of posts (number TBD) showing the development of a webapp that tracks bias of news articles relating to AI.</p>
 <p>In this series I will prioritise the end-to-end solution architecture, rather than the Data Science side: I am looking to incrementally build a mini-data platform on GCP that showcases core features of what is called the &ldquo;Modern Data Stack&rdquo; and relevant Data Governance tools.</p>
 <p>In the first post, I will showcase a Streamlit app that tracks bias of news articles relating to AI. The app and underlying infrastructure is fully deployed on GCP.</p>]]></description>
-</item>
-<item>
-    <title>Detecting Bias in News Items - part 1</title>
-    <link>http://localhost:1313/posts/2024-10-20-bias-detection-in-news-gcp/</link>
-    <pubDate>Sun, 20 Oct 2024 18:43:54 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/2024-10-20-bias-detection-in-news-gcp/</guid>
-    <description><![CDATA[<p>This is the first part of a series where I plan to develop an app to track bias in media publications in Greece.</p>
-<h2 id="motivation">Motivation</h2>
-<p>As a teenage football fan in Greece, I quickly became disillusioned with the sports media landscape. Journalists would constantly emphasise the referee&rsquo;s influence on matches. After matches, I would frequently encounter highly diverging opinions on match events, that a neutral observer would find pretty unequivocal. The opinion pieces became entirely predictable, and bereft of &ldquo;signal&rdquo;. I eventually gave up on Greek football altogether - it was only football after all..</p>]]></description>
 </item>
 <item>
     <title>Data Operating Principles</title>

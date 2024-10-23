@@ -1,10 +1,11 @@
 ---
+author: "Alex Spanos"
 title: "Tracking AI bias in the news"
 date: 2024-10-20T21:12:09+01:00
 ---
 
 
-Kicking off a series of N posts showing the development of a webapp that tracks bias of news articles relating to AI.
+Kicking off a series of posts (number TBD) showing the development of a webapp that tracks bias of news articles relating to AI.
 
 In this series I will prioritise the end-to-end solution architecture, rather than the Data Science side: I am looking to incrementally build a mini-data platform on GCP that showcases core features of what is called the "Modern Data Stack" and relevant Data Governance tools.
 
@@ -30,16 +31,20 @@ The Streamlit app is deployed on GCP and can be found [here](https://streamlit-a
 
 It shows insights into the bias of news articles containing the term "AI" over time, and is updated daily as new articles are ingested into BigQuery  and enriched using a `transformers` pipeline.
 
+
+![Streamlit App](streamlit_screenshot_resized.png)
+
 ## MVP Solution Architecture
 
 I put together an MVP, a first iteration of a solution done without thinking deeply about the various individual components, but which allows incremental improvement. My goal here is to get something working end-to-end, and then iterate on it.
 
-The entire solution is hosted on GCP using:
+The entire solution is hosted on GCP under a single project using:
 - Cloud Run for the Streamlit app
 - Artifact Registry for storing the Streamlit app Docker image
 - Cloud Functions for the daily ingestion of news articles and bias fields enrichment
 - Cloud Scheduler for scheduling the ingestion
 - BigQuery for storing the news articles and enriched fields
+
 
 
 **Prototype architecture:**
@@ -110,8 +115,14 @@ Due to the API limitations, it was important to schedule it to run daily, to ena
 
 I used Cloud Scheduler to schedule the function to run daily - cron job style.
 
+![Ingestion Cloud Function](ingest_api_screenshot.png)
+
+![Cloud Scheduler](cloud_scheduler_screenshot.png)
+
 ## Storage layer: BigQuery
 Well, one could argue that for the purposes of this exercise, BigQuery is overkill, and that a simple Postgres database would have sufficed. But that would defeat the purpose of this work.
+
+![BigQuery](bq_screenshot_resized.png)
 
 Considering the tiny size of the dataset, I did not need to worry about partitioning or other optimisations for the Data Warehouse layer.
  a a a
@@ -145,7 +156,10 @@ def classify_content(row):
 
 Meanwhile, I would have liked to trigger this function immediately after new news articles are ingested into BigQuery. Alas, such triggers are not supported and going down a Pub/Sub rabbit hole was out of scope.
 
+![Classifier Cloud Function](classify_cf_screenshot.png)
+
 ## Consumption layer: Streamlit App
+
 I have loved Streamlit since it came out, it gives Data Scientists superpowers  - although I don't think it has evolved a lot from an OSS perspective since being acquired by Snowflake ($800m ??).
 
 Cursor + Claude Sonnet 3.5 were a massive help with developing the Streamlit component, and I have no guilt in using it!
