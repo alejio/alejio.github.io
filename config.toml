@@ -17,11 +17,6 @@ googleAnalytics = "G-ZQB3XPKYKM"
 # copyright description used only for seo schema
 copyright = ""
 
-# Author config
-[author]
-  name = "Alex Spanos"
-  email = ""
-  link = ""
 
 # Menu config
 [menu]

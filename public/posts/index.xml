@@ -7,7 +7,7 @@
     <title>Tracking AI bias in the news</title>
     <link>http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/</link>
     <pubDate>Sun, 20 Oct 2024 21:12:09 &#43;0100</pubDate>
-    <author>Alex Spanos</author>
+    <author>Author</author>
     <guid>http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/</guid>
     <description><![CDATA[<p>Kicking off a series of N posts showing the development of a webapp that tracks bias of news articles relating to AI.</p>
 <p>In this series I will prioritise the end-to-end solution architecture, rather than the Data Science side: I am looking to incrementally build a mini-data platform on GCP that showcases core features of what is called the &ldquo;Modern Data Stack&rdquo; and relevant Data Governance tools.</p>
@@ -17,7 +17,7 @@
     <title>Detecting Bias in News Items - part 1</title>
     <link>http://localhost:1313/posts/2024-10-20-bias-detection-in-news-gcp/</link>
     <pubDate>Sun, 20 Oct 2024 18:43:54 &#43;0100</pubDate>
-    <author>Alex Spanos</author>
+    <author>Author</author>
     <guid>http://localhost:1313/posts/2024-10-20-bias-detection-in-news-gcp/</guid>
     <description><![CDATA[<p>This is the first part of a series where I plan to develop an app to track bias in media publications in Greece.</p>
 <h2 id="motivation">Motivation</h2>
@@ -27,7 +27,7 @@
     <title>Data Operating Principles</title>
     <link>http://localhost:1313/posts/2024-01-30-operating-principles/</link>
     <pubDate>Tue, 30 Jan 2024 15:38:13 &#43;0000</pubDate>
-    <author>Alex Spanos</author>
+    <author>Author</author>
     <guid>http://localhost:1313/posts/2024-01-30-operating-principles/</guid>
     <description><![CDATA[<h2 id="data-leadership-playbooks-or-operating-principles">Data leadership playbooks or operating principles?</h2>
 <p>Embarking on a Head of Data role without previous leadership and people management experience was a challenge interesting enough. Having made a bunch of mistakes and another bunch of good calls, I think it is a good time to write about the experience in the hope that I will have learned something through reflection. Also taking this leap of courage to publish, as some people may who have already been on a similar journey, or are preparing to embark on one might find it a useful input.</p>]]></description>
@@ -36,7 +36,7 @@
     <title>From Geophysicist to &#34;Data Scientist&#34;</title>
     <link>http://localhost:1313/posts/2020-10-18-from-geo-to-data/</link>
     <pubDate>Sun, 18 Oct 2020 00:00:00 &#43;0000</pubDate>
-    <author>Alex Spanos</author>
+    <author>Author</author>
     <guid>http://localhost:1313/posts/2020-10-18-from-geo-to-data/</guid>
     <description><![CDATA[<p>Many highly skilled Geophysicists are currently considering a career change to &ldquo;Data Science&rdquo;. Leaning on my brief time as a Data Processing Geophysicist, I would like to shed some light on the commonalities and dissimilarities of this role with Data Science.</p>
 <h2 id="the-picture-today">The picture today</h2>
@@ -46,7 +46,7 @@
     <title>Product Management, a different creature!</title>
     <link>http://localhost:1313/posts/2020-02-09-hiring-product-managers/</link>
     <pubDate>Sun, 09 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Alex Spanos</author>
+    <author>Author</author>
     <guid>http://localhost:1313/posts/2020-02-09-hiring-product-managers/</guid>
     <description><![CDATA[<p>Doubling up on my Data Scientist role, I did a stint as interim Product Manager for our product team. Here are my thoughts on Product Management and my observations on what it takes to succeed in high uncertainty environments (aka startups). And the million dollar question: how to hire a good Product Manager?</p>
 <h2 id="a-data-scientists-roundtrip-to-product-management">A Data Scientist&rsquo;s roundtrip to Product Management</h2>
@@ -56,7 +56,7 @@
     <title>Hiring Machine Learning Engineers Part 2 - Job spec and assignment</title>
     <link>http://localhost:1313/posts/2019-09-08-hiring-machine-learning-engineers-part-2/</link>
     <pubDate>Sun, 08 Sep 2019 00:00:00 &#43;0000</pubDate>
-    <author>Alex Spanos</author>
+    <author>Author</author>
     <guid>http://localhost:1313/posts/2019-09-08-hiring-machine-learning-engineers-part-2/</guid>
     <description><![CDATA[<p><a href="https://alexiospanos.com/hiring-machine-learning-engineers-part-1/" target="_blank" rel="noopener noreffer ">Part 1</a> discussed the emergence of the Machine Learning Engineer role, its distinction from the Data Scientist and the importance of organisations prioritising hiring the former against the latter when data infrastructure maturity is low. In Part 2, we will cover more practical considerations around the hiring process.</p>
 <h2 id="get-the-job-spec-right">Get the job spec right</h2>
@@ -66,7 +66,7 @@
     <title>Hiring Machine Learning Engineers Part 1 - Context</title>
     <link>http://localhost:1313/posts/2019-09-02-hiring-machine-learning-engineers-part-1/</link>
     <pubDate>Mon, 02 Sep 2019 00:00:00 &#43;0000</pubDate>
-    <author>Alex Spanos</author>
+    <author>Author</author>
     <guid>http://localhost:1313/posts/2019-09-02-hiring-machine-learning-engineers-part-1/</guid>
     <description><![CDATA[<p>Recently, my team decided to hire for a <em>Machine Learning Engineer</em>. Whilst considering the requirements for this role, a relatively new and ill-defined one in the industry, I found myself thinking about its contrast with the <em>Data Scientist</em> - incidentally, the role I continue to identify mostly with.</p>
 <p>In the recent past this kind of distinction only made academic sense to me. I will confess to subconsciously thinking that a Machine Learning Engineer is someone who took the <a href="https://www.fast.ai/" target="_blank" rel="noopener noreffer ">fast.ai</a> course and now builds Deep Learning models on GPU&rsquo;s, claiming out-of-the-world performances, without considering caveats and biases of the underlying datasets.</p>]]></description>
