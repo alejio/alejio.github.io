@@ -1,5 +1,5 @@
 ---
-title: "A glimpse of the future - The day Cursor closed my Linear ticket"
+title: "A glimpse of the future: The day Cursor closed my Linear ticket"
 date: 2025-07-04T14:46:41+01:00
 draft: false
 categories:
