@@ -5,8 +5,6 @@ categories:
 title: "Data Operating Principles"
 date: 2024-01-30T15:38:13Z
 draft: false
-categories:
-- Data
 ---
 
 ## Data leadership playbooks or operating principles?
