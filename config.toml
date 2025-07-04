@@ -156,8 +156,8 @@ copyright = ""
   [params.social]
     GitHub = "alejio"
     Linkedin = "alexspanos"
-    Twitter = "alexiospanos"  
-    RSS = true # LoveIt NEW | 0.2.0
+    # Twitter = "alexiospanos"  
+    RSS = false # LoveIt NEW | 0.2.0
 
 # Markup related configuration in Hugo
 [markup]

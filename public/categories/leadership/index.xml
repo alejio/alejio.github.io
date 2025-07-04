@@ -1,19 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Leadership on Alex Spanos</title>
-    <link>http://localhost:1313/categories/leadership/</link>
-    <description>Recent content in Leadership on Alex Spanos</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 30 Jan 2024 15:38:13 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/leadership/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Data Operating Principles</title>
-      <link>http://localhost:1313/posts/2024-01-30-operating-principles/</link>
-      <pubDate>Tue, 30 Jan 2024 15:38:13 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-01-30-operating-principles/</guid>
-      <description>&lt;h2 id=&#34;data-leadership-playbooks-or-operating-principles&#34;&gt;Data leadership playbooks or operating principles?&lt;/h2&gt;&#xA;&lt;p&gt;Embarking on a Head of Data role without previous leadership and people management experience was a challenge interesting enough. Having made a bunch of mistakes and another bunch of good calls, I think it is a good time to write about the experience in the hope that I will have learned something through reflection. Also taking this leap of courage to publish, as some people may who have already been on a similar journey, or are preparing to embark on one might find it a useful input.&lt;/p&gt;</description>
-    </item>
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Leadership - Category - Alex Spanos</title>
+        <link>http://localhost:1313/categories/leadership/</link>
+        <description>Leadership - Category - Alex Spanos</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Jan 2024 15:38:13 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/leadership/" rel="self" type="application/rss+xml" /><item>
+    <title>Data Operating Principles</title>
+    <link>http://localhost:1313/posts/2024-01-30-operating-principles/</link>
+    <pubDate>Tue, 30 Jan 2024 15:38:13 &#43;0000</pubDate>
+    <author>Alex Spanos</author>
+    <guid>http://localhost:1313/posts/2024-01-30-operating-principles/</guid>
+    <description><![CDATA[<h2 id="data-leadership-playbooks-or-operating-principles">Data leadership playbooks or operating principles?</h2>
+<p>Embarking on a Head of Data role without previous leadership and people management experience was a challenge interesting enough. Having made a bunch of mistakes and another bunch of good calls, I think it is a good time to write about the experience in the hope that I will have learned something through reflection. Also taking this leap of courage to publish, as some people may who have already been on a similar journey, or are preparing to embark on one might find it a useful input.</p>]]></description>
+</item>
+</channel>
 </rss>
