@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# About
-
 **Hey there, I’m Alex — a data and AI leader who helps organizations turn data into a competitive advantage.**
 
 I specialise in **AI, machine learning, and data platform architecture**, with a track record of building data capabilities that drive tangible business impact. Most recently, I was **Head of Data & AI at Lunos**, a seed-stage fintech startup, where I led data and AI efforts as part of the founding team.
