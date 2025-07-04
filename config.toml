@@ -136,7 +136,7 @@ copyright = ""
       # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "My Data blog"
+      subtitle = ""
       # whether to use typeit animation for subtitle
       typeit = false
       # whether to show social links
