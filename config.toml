@@ -169,3 +169,35 @@ copyright = ""
   # LoveIt NEW | 0.2.0 Analytics config
   [params.analytics]
     enable = false
+
+  # Page config
+  [params.page]
+    # Social share links in post page
+    [params.page.share]
+      enable = true
+      X = true
+      Threads = false
+      Facebook = false
+      Linkedin = true
+      Whatsapp = false
+      Pinterest = false
+      Tumblr = false
+      HackerNews = false
+      Reddit = false
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = false
+      Instapaper = false
+      Pocket = false
+      Flipboard = false
+      Weibo = false
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Diaspora = false
+      Mix = false
+      Telegram = false
