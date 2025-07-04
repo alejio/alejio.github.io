@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-**Hey there, I’m Alex — a data and AI leader who helps organizations turn data into a competitive advantage.**
+**Hey there, I’m Alex, a data and AI leader who helps organizations turn data into a competitive advantage.**
 
 I specialise in **AI, machine learning, and data platform architecture**, with a track record of building data capabilities that drive tangible business impact. Most recently, I was **Head of Data & AI at Lunos**, a seed-stage fintech startup, where I led data and AI efforts as part of the founding team.
 
@@ -12,13 +12,13 @@ I’m now open to **consulting, advisory, and fractional leadership roles** wher
 
 ## My journey
 
-My career is grounded in a strong foundation in **statistics** and **applied mathematics** — I hold an MSc in Statistics (awarded with distinction) and have been a **Chartered Statistician (CStat)** for over a decade. From there, I applied machine learning in various domains: starting with geophysics, where I developed ML approaches that reduced seismic data QC time by 70%; and later in financial services, open banking, and fintech.
+My career is grounded in a strong foundation in **Data Science**. I hold an MSc in Statistics (awarded with distinction) and have been a **Chartered Statistician (CStat)** for over a decade. From there, I applied machine learning in various domains: starting with geophysics, where I developed ML approaches that reduced seismic data QC time by 70%; and later in financial services, open banking, and fintech.
 
-Since 2018, I’ve worked at the forefront of **open banking and fintech AI**, holding senior data leadership roles at companies like **TrueLayer** (the UK’s first open banking unicorn) and **Tarabut** (MENA’s leading open banking platform). Across these roles, I built data teams, delivered data products deployed across six regions, and generated multi-million dollar revenue from data initiatives — always with a pragmatic, impact-driven approach to AI and data science.
+Since 2018, I’ve worked at the forefront of **Open Banking and fintech AI**, being the first data hire at companies like **TrueLayer** (the UK’s first open banking unicorn) and **Tarabut** (MENA’s leading open banking platform). Across these roles, I built data teams, delivered data products deployed across six regions, and generated multi-million dollar revenue from data initiatives - always with a pragmatic, impact-driven approach to AI and data science.
 
 ## Highlights
 
-- **AI & Machine Learning Leadership**: Delivered production-grade ML systems in fintech — from financial behaviour insights to automated categorisation and verification services. Led MLOps efforts ensuring 99.9% availability and weekly model updates at scale.
+- **AI & Machine Learning Leadership**: Delivered production-grade ML systems in fintech: from financial behaviour insights to automated categorisation and verification services. Led MLOps efforts ensuring 99.9% availability and weekly model updates at scale.
 - **Data Platforms & Governance**: Designed and integrated cloud-native data platforms (AWS, GCP, Snowflake, dbt). Chaired data governance committees, embedding compliance with data protection laws through policies, processes, and culture change.
 - **Open Banking & Fintech Data Products**: Built data capabilities and products that opened new revenue streams, contributing over **$4M in data product revenue** and serving internal and external stakeholders across regions.
 - **Team Building & Technical Leadership**: Scaled data functions across 4+ countries, managing 10+ FTE, and reporting directly to CEOs and CTOs.
