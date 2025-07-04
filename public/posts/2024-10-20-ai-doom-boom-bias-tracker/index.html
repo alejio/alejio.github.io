@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Tracking AI bias in the news - Alex Spanos</title><meta name="Description" content="My Data blog"><meta property="og:url" content="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/">
+        <title>Tracking AI bias in the news - Alex Spanos</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/">
   <meta property="og:site_name" content="Alex Spanos">
   <meta property="og:title" content="Tracking AI bias in the news">
   <meta property="og:description" content="Kicking off a series of posts (number TBD) showing the development of a webapp that tracks bias of news articles relating to AI.
@@ -23,10 +23,11 @@ In this series I will prioritise the end-to-end solution architecture, rather th
 In the first post, I will showcase a Streamlit app that tracks bias of news articles relating to AI. The app and underlying infrastructure is fully deployed on GCP.">
       <meta name="twitter:site" content="@alexiospanos">
 <meta name="application-name" content="My cool site">
-<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="My cool site">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" /><link rel="prev" href="http://localhost:1313/posts/2024-01-30-operating-principles/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" /><link rel="prev" href="http://localhost:1313/posts/2024-01-30-operating-principles/" /><link rel="next" href="http://localhost:1313/posts/2025-07-04-a-glimpse-of-the-future-cursor/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
@@ -45,7 +46,7 @@ In the first post, I will showcase a Streamlit app that tracks bias of news arti
             },"description": ""
     }
     </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><head>
     
@@ -103,7 +104,7 @@ In the first post, I will showcase a Streamlit app that tracks bias of news arti
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Tracking AI bias in the news</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Alex Spanos</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="20-10-2024">20-10-2024</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1211 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-10-20">2024-10-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1211 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -182,7 +183,12 @@ In the first post, I will showcase a Streamlit app that tracks bias of news arti
 <p>It will do for now though.</p>
 <p>I decided to focus my analysis on all articles that contain the term &ldquo;AI&rdquo; - a wide net that will hopefully not excessively bias a priori the analysis.</p>
 <p>Sample code:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-python">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">NEWS_API_URL</span> <span class="o">=</span> <span class="s2">&#34;https://newsapi.org/v2/everything&#34;</span>
@@ -207,8 +213,8 @@ In the first post, I will showcase a Streamlit app that tracks bias of news arti
 </span></span><span class="line"><span class="cl">    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">NEWS_API_URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">all_articles</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;articles&#34;</span><span class="p">,</span> <span class="p">[])</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Articles fetched: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">all_articles</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">all_articles</span>
-</span></span></code></pre></div><p>Considering I only have access to the 30 previous days of news history via the API, it would be useful to have my dataset grow over time.</p>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">all_articles</span></span></span></code></pre></div></div>
+<p>Considering I only have access to the 30 previous days of news history via the API, it would be useful to have my dataset grow over time.</p>
 <h2 id="ingestion-layer-cloud-function-and-cloud-scheduler">Ingestion layer: Cloud Function and Cloud Scheduler</h2>
 <p>I used the Cloud Function SDK to write a simple function that fetches news articles from the NewsAPI and stores them in BigQuery.</p>
 <p>Due to the API limitations, it was important to schedule it to run daily, to enable, over time, to get more useful insights about the nature of the AI discourse.</p>
@@ -250,15 +256,20 @@ I used the URL as the primary key for the table, as it was unique - although tha
 <p>As I put time constraints on my efforts, I resisted my Data Science instincts to experiment, and used it as-is.</p>
 <p>That was the right decision because getting the Cloud Function to work was tricky - I had to experiment with memory, CPU and timeout settings quite a bit to get it to work.</p>
 <p>Sample code (probably the tiniest ML pipeline I&rsquo;ve ever written):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">classify_content</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-python">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">classify_content</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2">    Classify description using zero-shot classification.
 </span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;AI Boomer&#34;</span><span class="p">,</span> <span class="s2">&#34;AI Doomer&#34;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="n">result</span> <span class="o">=</span> <span class="n">classifier</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">],</span> <span class="n">labels</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># Return the most likely label (highest score) and its corresponding score</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;scores&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># (category, score)</span>
-</span></span></code></pre></div><p>Meanwhile, I would have liked to trigger this function immediately after new news articles are ingested into BigQuery. Alas, such triggers are not supported and going down a Pub/Sub rabbit hole was out of scope.</p>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;scores&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># (category, score)</span></span></span></code></pre></div></div>
+<p>Meanwhile, I would have liked to trigger this function immediately after new news articles are ingested into BigQuery. Alas, such triggers are not supported and going down a Pub/Sub rabbit hole was out of scope.</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -282,12 +293,12 @@ I used the URL as the primary key for the table, as it was unique - although tha
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 20-10-2024</span>
+                <span>Updated on 2024-10-20</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news" data-via="alexiospanos"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news" data-via="alexiospanos"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/posts/2024-10-20-ai-doom-boom-bias-tracker/" data-title="Tracking AI bias in the news" data-description=""><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2024-10-20-ai-doom-boom-bias-tracker%2f&amp;text=Tracking%20AI%20bias%20in%20the%20news" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -299,15 +310,31 @@ I used the URL as the primary key for the table, as it was unique - although tha
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/2024-01-30-operating-principles/" class="prev" rel="prev" title="Data Operating Principles"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Data Operating Principles</a></div>
+    <div class="post-nav"><a href="/posts/2024-01-30-operating-principles/" class="prev" rel="prev" title="Data Operating Principles"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Data Operating Principles</a>
+            <a href="/posts/2025-07-04-a-glimpse-of-the-future-cursor/" class="next" rel="next" title="A glimpse of the future - The day Cursor closed my Linear ticket">A glimpse of the future - The day Cursor closed my Linear ticket<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
                 <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.min.js"></script><script>
+            var doNotTrack = false;
+            if ( false ) {
+                var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+                var doNotTrack = (dnt == "1" || dnt == "yes");
+            }
+            if (!doNotTrack) {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-ZQB3XPKYKM');
+            }
+        </script><script src="https://www.googletagmanager.com/gtag/js?id=G-ZQB3XPKYKM" async></script></body>
 </html>
