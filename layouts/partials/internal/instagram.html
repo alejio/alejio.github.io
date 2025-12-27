@@ -1,0 +1,7 @@
+{{- $id := .Get "id" | default "" -}}
+{{- if $id -}}
+    {{- $url := printf "https://www.instagram.com/p/%s/" $id -}}
+    <blockquote class="instagram-media" data-instgrm-permalink="{{ $url }}" data-instgrm-version="14"></blockquote>
+    <script async src="//www.instagram.com/embed.js"></script>
+{{- end -}}
+
