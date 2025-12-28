@@ -1,0 +1,11 @@
+{{- $id := .Get "id" | default "" -}}
+{{- $user := .Get "user" | default "" -}}
+{{- if $id -}}
+    {{- $url := printf "https://x.com/%s/status/%s" $user $id -}}
+    <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">View on X</a>
+{{- else if $user -}}
+    {{- $url := printf "https://x.com/%s" $user -}}
+    <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">@{{ $user }}</a>
+{{- end -}}
+
+

@@ -1,0 +1,13 @@
+{{- $id := .Get "id" | default "" -}}
+{{- $user := .Get "user" | default "" -}}
+{{- if $id -}}
+    {{- $url := printf "https://x.com/%s/status/%s" $user $id -}}
+    <blockquote class="twitter-tweet"><a href="{{ $url }}"></a></blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{- else if $user -}}
+    {{- $url := printf "https://x.com/%s" $user -}}
+    <a href="{{ $url }}" class="twitter-follow-button" data-show-count="false">Follow @{{ $user }}</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{- end -}}
+
+
