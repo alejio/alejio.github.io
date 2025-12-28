@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-**Hey there, I’m Alex, a data and AI leader who helps organizations turn data into a competitive advantage.**
+**Hey there, I'm Alex, a data and AI leader with a track record of building data capabilities that drive tangible business impact.**
 
-I specialise in **AI, machine learning, and data platform architecture**, with a track record of building data capabilities that drive tangible business impact. Most recently, I was **Head of Data & AI at Lunos**, a seed-stage fintech startup, where I led data and AI efforts as part of the founding team.
+I specialise in **AI, machine learning, and data platform architecture**. I'm currently **Head of Data at Stream**. Previously, I was **Head of Data & AI at Lunos**, where I led data and AI efforts as part of the founding team.
 
-I’m now open to **consulting, advisory, and fractional leadership roles** where I can help companies scale their data capabilities, architect AI solutions, or implement data governance frameworks that stick.
+I write about data leadership, AI strategy, and building data capabilities in high-growth environments.
 
 ## My journey
 
@@ -36,25 +36,26 @@ I’ve presented on ML/MLOps and open banking data products at industry conferen
 
 ---
 
-## Let’s connect
+## Let's connect
 
-I’m available for:
+I enjoy connecting with others working on data and AI challenges. Feel free to reach out to:
 
-- **Data & AI strategy consulting**
-- **Data platform and MLOps architecture**
-- **Governance and compliance advisory**
-- **Interim or fractional data leadership**
-- **Speaking and panels**
+- **Discuss ideas** on data leadership, AI strategy, or platform architecture
+- **Explore speaking opportunities** at conferences or panels
+- **Connect** on shared interests in fintech, open banking, or data governance
 
-👉 **Email me at [contact@alexiospanos.com](mailto:contact@alexiospanos.com)**  
-👉 **Connect on [LinkedIn](https://uk.linkedin.com/in/alexspanos)**  
+**Email**: [contact&#64;alexiospanos&#46;com](mailto:contact&#64;alexiospanos&#46;com)
+**LinkedIn**: [Alex Spanos](https://uk.linkedin.com/in/alexspanos)  
 
 ---
 
 ## Experience snapshot
 
-- **Head of Data & AI — Lunos (2025)**  
-  Built data & AI capabilities as founding team member; implemented data governance, observability, and AI-driven decision systems.
+- **Head of Data — Stream (2025–Present)**
+  Leading data initiatives at Stream.
+
+- **Head of Data & AI — Lunos (2025)**
+  Founding team member; built data & AI capabilities, implemented data governance, observability, and AI-driven decision systems.
 
 - **Head of Data — Tarabut (2021–2025)**  
   Scaled data team across 4 countries; delivered >$4M in data product revenue; established group-wide data governance.
@@ -68,6 +69,6 @@ I’m available for:
 - **Data Scientist — IBM (2015–2017)**  
   Built ML solutions for customer analytics and fraud prevention in Tier 1 banks.
 
-- **Geophysicist (Applied ML role)** — PGS (2012–2015)**  
+- **Geophysicist (Applied ML role) — PGS (2012–2015)**  
   Developed ML approaches for seismic data processing as part of applied projects.
 

@@ -4,11 +4,11 @@ date: "2024-01-01T00:00:00Z"
 layout: single
 ---
 
-I'm available for consulting, advisory, and fractional leadership roles in data & AI.
+I enjoy connecting with others working on data and AI challenges.
 
 ## Get in Touch
 
-- **Email**: [contact@alexiospanos.com](mailto:contact@alexiospanos.com)
+- **Email**: [contact&#64;alexiospanos&#46;com](mailto:contact&#64;alexiospanos&#46;com)
 - **LinkedIn**: [Alex Spanos](https://uk.linkedin.com/in/alexspanos)
 - **GitHub**: [alejio](https://github.com/alejio)
 
@@ -22,4 +22,4 @@ I'm available for consulting, advisory, and fractional leadership roles in data 
 
 ---
 
-*Let's discuss how I can help your organization leverage data and AI for competitive advantage.*
+*Feel free to reach out to discuss ideas or connect.*

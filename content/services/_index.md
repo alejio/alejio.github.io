@@ -1,10 +1,10 @@
 ---
-title: "Services"
+title: "Expertise"
 date: "2024-01-01T00:00:00Z"
 layout: single
 ---
 
-I provide comprehensive data & AI consulting and leadership services to help organizations turn data into competitive advantage.
+I specialise in these areas of data and AI, drawing on over a decade of experience across startups and enterprises.
 
 ## Data & AI Strategy Consulting
 
@@ -48,4 +48,4 @@ I provide comprehensive data & AI consulting and leadership services to help org
 
 ---
 
-*Ready to transform your organization's data capabilities? [Get in touch](/contact/) to discuss your needs.*
+*Want to discuss any of these areas? [Get in touch](/contact/).*
