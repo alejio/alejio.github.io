@@ -49,14 +49,6 @@ copyright = ""
     title = "View my portfolio"
   [[menu.main]]
     weight = 3
-    identifier = "expertise"
-    pre = ""
-    post = ""
-    name = "Expertise"
-    url = "/services/"
-    title = "View my areas of expertise"
-  [[menu.main]]
-    weight = 4
     identifier = "contact"
     pre = ""
     post = ""
