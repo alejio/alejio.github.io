@@ -5,11 +5,11 @@ date: 2024-10-20T21:12:09+01:00
 ---
 
 
-Kicking off a series of posts (number TBD) showing the development of a webapp that tracks bias of news articles relating to AI.
+This post shows the development of a webapp that tracks bias of news articles relating to AI.
 
-In this series I will prioritise the end-to-end solution architecture, rather than the Data Science side: I am looking to incrementally build a mini-data platform on GCP that showcases core features of what is called the "Modern Data Stack" and relevant Data Governance tools.
+I prioritise the end-to-end solution architecture, rather than the Data Science side: building a mini-data platform on GCP that showcases core features of what is called the "Modern Data Stack" and relevant Data Governance tools.
 
-In the first post, I will showcase a Streamlit app that tracks bias of news articles relating to AI. The app and underlying infrastructure is fully deployed on GCP.
+Below, I showcase a Streamlit app that tracks bias of news articles relating to AI. The app and underlying infrastructure is fully deployed on GCP.
 
 **App**: https://streamlit-app-824805393106.europe-west2.run.app/
 
@@ -170,7 +170,4 @@ With an AI code editor I could focus on EDA, and storytelling while letting the 
 
 You can see the app in action [here](https://streamlit-app-824805393106.europe-west2.run.app/).
 
-## Next up
-- Deploy infrastructure using Terraform
-- Basic Data Governance implementation
 
