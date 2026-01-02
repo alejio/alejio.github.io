@@ -6,8 +6,7 @@ draft: false
 
 Kicking off a series documenting the development of an ML system for Fantasy Premier League.
 
-
-Gameweek 19. The exact midpoint of the Premier League season.
+**Gameweek 19**. The exact midpoint of the Premier League season.
 
 
 > After five months of work, 395 commits, and over 800 tests, I’ve built a production-minded system with reproducible pipelines, a CLI, and built-in observability. 
@@ -22,8 +21,9 @@ This isn't a success story. At least, not yet.
 - **What’s next**: Multi-gameweek planning, better uncertainty quantification, and further automation.
 
 
-*Points per gameweek compared to FPL average and the current #1 manager*
-![Gameweek Points Timeline](gameweek_points_timeline.png)
+*Points per gameweek compared to FPL average and the current #1 manager:*
+
+<img src="gameweek_points_timeline.png" alt="Gameweek Points Timeline" style="display: block; margin: 0 auto;" />
 
 ---
 
@@ -78,7 +78,9 @@ Using [Marimo](https://marimo.io/) (a reactive Python notebook), I built an inte
 
 I got it to a place where the results made intuitive sense:
 
-![First gameweek squad](first_squad.png)
+*First gameweek squad:*
+
+<img src="first_squad.png" alt="First gameweek squad" style="display: block; margin: 0 auto;" />
 
 I adapted the algorithm to pick the best transfers and starting 11 for each gameweek. But the problem with this rules-based approach was that it didn't allow self-improvement. The system wasn't learning, so I changed the paradigm.
 
@@ -87,7 +89,8 @@ I adapted the algorithm to pick the best transfers and starting 11 for each game
 One thing I'm particularly proud of: the database.
 
 *Database schema:*
-![Database schema](database_schema.png)
+
+<img src="database_schema.png" alt="Database schema" style="display: block; margin: 0 auto;" />
 
 25 SQLite tables split into two layers:
 
@@ -118,10 +121,12 @@ Key design decisions:
 - A **simulated annealing (SA)** optimiser that explores beyond greedy local maxima
 
 *Example of the transfer optimisation results:*
-![Transfer optimisation](gameweek_manager_1.png)
+
+<img src="gameweek_manager_1.png" alt="Transfer optimisation" style="display: block; margin: 0 auto;" />
 
 *Example of the starting 11 optimisation:*
-![Starting 11 optimisation](gameweek_manager_2.png)
+
+<img src="gameweek_manager_2.png" alt="Starting 11 optimisation" style="display: block; margin: 0 auto;" />
 
 But every gameweek still involved multiple "human-in-the-loop" decisions: model training strategy, risk appetite (conservative vs balanced vs aggressive), captain selection, etc. I was still making a lot of arbitrary calls.
 
@@ -137,25 +142,21 @@ So I'm building an LLM agent. It uses the ML predictions as a tool, but adds a l
 
 Pure mathematical optimisation is great for solving for a single moment, but it can be surprisingly fragile. An optimiser might suggest burning your last £0.5m in the bank to upgrade a bench defender today, only to leave you exactly £0.1m short of bringing back **Mohamed Salah** when he returns from **AFCON** in two weeks. That's where the agent comes in: it uses tools like `analyze_fixture_context` to spot upcoming fixture swings and `get_template_players` to ensure you aren't walking into a differential trap, providing the long-term strategic common sense that a simple calculator would miss.
 
-
 *Running the agent CLI:*
 
-<img src="transfer_agent_animated.gif" alt="Running the agent" style="width: 60%; display: block; margin: 0 auto 2em auto;" />
-
+<img src="transfer_agent_animated.gif" alt="Running the agent" style="width: 60%; display: block; margin: 0 auto;" />
 
 What you're seeing: the orchestrator delegating to 5 specialised tools (multi-GW xP predictions, fixture context analysis, SA optimiser validation, squad weakness detection, template player analysis), then synthesising recommendations with strategic reasoning.
 
-
 *Output of the agent CLI:*
 
-<img src="agent_recommendation.png" alt="Agent output" style="width: 60%; display: block; margin: 2em auto 0 auto;" />
+<img src="agent_recommendation.png" alt="Agent output" style="width: 60%; display: block; margin: 0 auto;" />
 
 At the moment it's restricted to transfer recommendations, rather than full team and captain selection. I've used [Pydantic AI](https://ai.pydantic.dev/) as the agentic framework for its structured outputs and [Logfire](https://logfire.pydantic.dev/) integration for observability.
 
-
 *Logfire trace:*
 
-<img src="logfire.png" alt="Logfire trace" style="width: 60%; display: block; margin: 2em auto 0 auto;" />
+<img src="logfire.png" alt="Logfire trace" style="width: 90%; display: block; margin: 0 auto;" />
 
 ---
 
