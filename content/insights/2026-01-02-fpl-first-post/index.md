@@ -4,8 +4,6 @@ date: 2026-01-02T09:32:37Z
 draft: false
 ---
 
-# Engineering an FPL Brain: Why I'm Building in Public (While Losing)
-
 Kicking off a series of posts (number TBD) documenting the development of an ML system for Fantasy Premier League.
 
 6 months of work. 380+ commits. 800+ tests. 10 evals. A production-ready system.
@@ -78,22 +76,22 @@ One thing I'm particularly proud of: the database.
 *Database schema:*
 ![Database schema](database_schema.png)
 
-I built a dedicated data pipeline that captures and enriches FPL data into 18 SQLite tables:
+25 SQLite tables split into two layers:
 
-- **Raw FPL data**: 775 players, 380 fixtures, 38 gameweeks
-- **Historical performance**: 13,395 player-gameweek observations
-- **Personal tracking**: my 270 picks across 18 gameweeks, chip usage, transfer history
-- **Betting markets**: 190 fixtures with full odds data (Bet365, Pinnacle, market movements)
+**18 raw tables** capturing FPL data:
+- 775 players, 380 fixtures, 38 gameweeks
+- 13,395 player-gameweek observations
+- My 270 picks across 18 gameweeks, chip usage, transfer history
+- 190 fixtures with betting odds (Bet365, Pinnacle, market movements)
 
-But the real value is in the derived analytics: 7 tables of computed features:
+**7 derived tables** where the real value lives:
+- Ownership trends: bandwagon detection, template players, transfer momentum
+- Value analysis: points-per-million, buy/sell/hold recommendations
+- Fixture difficulty: multi-factor analysis beyond FPL's simple 1–5 rating
+- Team form: venue-specific attack/defence strength
+- Betting features: implied probabilities, clean sheet likelihood, xG from odds
 
-- **Ownership trends**: bandwagon detection, template player identification, transfer momentum
-- **Value analysis**: points-per-million, buy/sell/hold recommendations with confidence scores
-- **Fixture difficulty**: multi-factor analysis beyond FPL's simple 1–5 rating
-- **Team form**: venue-specific attack/defence strength, home advantage metrics
-- **Betting features**: implied probabilities, clean sheet likelihood, expected goals from odds
-
-I use Pydantic for data validation and quality checks throughout. This isn't just "I downloaded some CSVs." It's a living database that updates daily, tracks history, and computes derived metrics that feed into the ML pipeline and agent tools.
+Pydantic validates everything. This matters more than you'd think: code assistants love adding fallbacks to "make it work" rather than fixing upstream data issues. Strict validation forces correctness at the source.
 
 ### Phase 2: ML predictions (Sept–Dec)
 
@@ -132,7 +130,7 @@ What you're seeing: the orchestrator delegating to 5 specialised tools (multi-GW
 *Output of the agent CLI:*
 ![Example agent recommendation](agent_recommendation.png)
 
-At the moment it's restricted to transfer recommendations, rather than full team and captain selection. I've used pydantic-ai as the agentic framework for its structured outputs and Logfire integration for observability.
+At the moment it's restricted to transfer recommendations, rather than full team and captain selection. I've used [Pydantic AI](https://ai.pydantic.dev/) as the agentic framework for its structured outputs and [Logfire](https://logfire.pydantic.dev/) integration for observability.
 
 *Logfire trace:*
 ![Logfire trace](logfire.png)
