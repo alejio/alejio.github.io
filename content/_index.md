@@ -1,15 +1,15 @@
 ---
 title: "Alex Spanos"
-description: "Expert in data platform architecture, data strategy, and applied AI/ML"
+description: "Personal writing on data leadership and applied AI/ML"
 ---
 
-I'm a data and AI leader with over a decade of experience building data capabilities in high-growth startups and global enterprises. Currently **Head of Data at Stream**, I specialise in data platform architecture, data strategy, and applied AI/ML. My career spans building data-driven products, scaling data teams, and delivering machine learning solutions that drive business innovation. ([Learn more on the About page](/about/).)
+I'm a data and AI leader with over a decade of experience building data capabilities in high-growth environments. Currently **Head of Data at Stream**, I write here in a personal capacity about data leadership, operating models, and applied AI/ML. ([Learn more on the About page](/about/).)
 
-## Specialties
+## Topics
 
-- **Data Platforms**: Architecting and scaling modern data infrastructure for analytics and AI
-- **Data Strategy**: Guiding organizations to leverage data as a strategic asset
-- **Applied AI/ML**: Delivering AI and machine learning solutions with real-world impact
+- Data platforms and governance
+- Data leadership and team building
+- Applied AI/ML and MLOps (general patterns)
 
 ## Portfolio
 
@@ -21,4 +21,4 @@ Explore my [key projects and achievements](/portfolio/) in data science, AI, and
 
 ## Get in Touch
 
-I write about data leadership, AI strategy, and building effective data teams. Feel free to explore my [insights](/insights/) or [get in touch](/contact/).
+For posts and notes, see [insights](/insights/). For feedback or corrections, see the [contact page](/contact/).

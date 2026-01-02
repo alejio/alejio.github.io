@@ -38,11 +38,9 @@ I’ve presented on ML/MLOps and open banking data products at industry conferen
 
 ## Let's connect
 
-I enjoy connecting with others working on data and AI challenges. Feel free to reach out to:
+This is a personal site. The views and opinions here are my own and not affiliated with my employer.
 
-- **Discuss ideas** on data leadership, AI strategy, or platform architecture
-- **Explore speaking opportunities** at conferences or panels
-- **Connect** on shared interests in fintech, open banking, or data governance
+If you have feedback on a post, spot an error, or want to connect as a peer in the data/AI community, feel free to reach out.
 
 **Email**: [contact&#64;alexiospanos&#46;com](mailto:contact&#64;alexiospanos&#46;com)
 **LinkedIn**: [Alex Spanos](https://uk.linkedin.com/in/alexspanos)  

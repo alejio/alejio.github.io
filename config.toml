@@ -150,7 +150,7 @@ copyright = ""
       # whether to show social links
       social = true
       # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
-      # disclaimer = ""
+      disclaimer = "Personal site; views are my own and not affiliated with my employer. No consulting/contracting services offered. Please do not share confidential information."
     # Home page posts
     [params.home.posts]
       enable = true
