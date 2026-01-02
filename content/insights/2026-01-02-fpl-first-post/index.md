@@ -6,6 +6,8 @@ draft: false
 
 Kicking off a series of posts (number TBD) documenting the development of an ML system for Fantasy Premier League.
 
+Gameweek 19. The exact midpoint of the Premier League season.
+
 6 months of work. 380+ commits. 800+ tests. 10 evals. A production-ready system.
 
 This isn't a success story. At least, not yet.
@@ -91,7 +93,7 @@ One thing I'm particularly proud of: the database.
 - Team form: venue-specific attack/defence strength
 - Betting features: implied probabilities, clean sheet likelihood, xG from odds
 
-Pydantic validates everything. This matters more than you'd think: code assistants love adding fallbacks to "make it work" rather than fixing upstream data issues. Strict validation forces correctness at the source.
+> **Pydantic validates everything.** This matters more than you'd think: code assistants love adding fallbacks to "make it work" rather than fixing upstream data issues. Strict validation forces correctness at the source.
 
 ### Phase 2: ML predictions (Sept–Dec)
 
@@ -145,7 +147,7 @@ At the moment it's restricted to transfer recommendations, rather than full team
 
 **The ambition**: a system that can reason about FPL at the level of a top player not just crunch numbers, but understand when to take risks, when to play safe, when to go differential.
 
-I don't know if I'll get there. But I'm building in public, so you can follow along.
+I don't know if I'll get there. But I'm building in (semi-)public, so you can follow along.
 
 ---
 
@@ -154,3 +156,9 @@ I don't know if I'll get there. But I'm building in public, so you can follow al
 This is the first in a series documenting the journey. Next posts will cover how the architecture evolved from notebooks to services, and when ML predictions aren't enough (the agent).
 
 I'll share code, experiments that failed, and weekly accountability on how the system performs.
+
+**Next: How the architecture evolved from notebooks to services** - coming soon!
+
+---
+
+Follow along: [LinkedIn](https://linkedin.com/in/alexspanos)
