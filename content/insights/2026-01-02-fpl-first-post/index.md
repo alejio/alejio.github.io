@@ -47,14 +47,17 @@ Refreshingly, I'm +86 points above the average manager. But more interestingly, 
 
 ## The journey so far
 
-The architecture has progressed through three phases:
+5 months. 395 commits. 833 tests. 25 database tables. 15 domain services.
 
-```
-Manual Control (Marimo) → ML Predictions → Agentic Reasoning
-     Learning              Better signals     Autonomous strategy
-```
+The architecture progressed through three distinct phases:
 
-The codebase: 380+ commits across 2 repositories, 800+ tests passing, 13 domain services with clean architecture. Two-repo split: `fpl-dataset-builder` (data) + `fpl-team-picker` (analysis).
+| Phase | Focus | Key Outcome |
+|-------|-------|-------------|
+| **Manual Control** | Interactive notebooks, rules-based picks | Learning the domain |
+| **ML Predictions** | 156 features, custom loss functions | Better signals |
+| **Agentic Reasoning** | LLM + tools, strategic context | Autonomous strategy |
+
+The codebase lives across two repositories: `fpl-dataset-builder` handles data collection and enrichment, while `fpl-team-picker` handles analysis, ML, and the agent.
 
 ### Phase 1: Manual control (July–Aug)
 
