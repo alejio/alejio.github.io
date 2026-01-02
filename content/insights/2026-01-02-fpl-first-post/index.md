@@ -4,13 +4,20 @@ date: 2026-01-02T09:32:37Z
 draft: false
 ---
 
-Kicking off a series of posts (number TBD) documenting the development of an ML system for Fantasy Premier League.
+Kicking off a series documenting the development of an ML system for Fantasy Premier League.
 
 Gameweek 19. The exact midpoint of the Premier League season.
 
-6 months of work. 380+ commits. 800+ tests. 10 evals. A production-ready system.
+>5 months of work. 395 commits. 833 tests. 10 evals. A production-minded system: reproducible pipelines, a CLI, a growing test suite, and observability.
 
 This isn't a success story. At least, not yet.
+
+**TL;DR**
+
+- **What I built**: a data pipeline + ML expected points model + transfer/squad/captainoptimiser + experimentalLLM agent for transfers
+- **Current performance**: ranked ~2.7m/11m (but +86 points above average)
+- **What’s novel**: betting-derived features, hauler-focused loss, agent tools over optimisation
+- **What’s next**: multi-gameweek planning, uncertainty, and more automation
 
 
 *Points per gameweek compared to FPL average and the current #1 manager*
@@ -21,6 +28,8 @@ This isn't a success story. At least, not yet.
 ## What is FPL?
 
 For the uninitiated: Fantasy Premier League is a free-to-play fantasy football game where you select 15 real Premier League players within a £100m budget. You earn points based on their real-world performances (goals, assists, clean sheets), make weekly transfers to optimise your squad, and compete against millions of other managers in a global leaderboard.
+
+The core problem: **predict player points and optimise transfers under constraints**, then layer strategy over the optimiser.
 
 For me, it's an excellent ML playground:
 
@@ -47,7 +56,7 @@ Refreshingly, I'm +86 points above the average manager. But more interestingly, 
 
 ## The journey so far
 
-5 months. 395 commits. 833 tests. 25 database tables. 15 domain services.
+**Current state:** 25 database tables. 15 domain services. Reproducible training. A growing test suite. Observability for the agent.
 
 The architecture progressed through three distinct phases:
 
@@ -101,10 +110,10 @@ With the data foundation in place, I built an ML pipeline with 156 features acro
 
 Key design decisions:
 
-- Custom loss functions focused on identifying "haulers" (10+ point players), not naively minimising average error
+- Custom loss functions focused on identifying **haulers** (players who score ~10+ points in a gameweek), not naively minimising average error
 - Evaluation on >2 full gameweek holdout datasets 
 - Hybrid training pipeline evaluating unified ML model vs position-specific models for GKP, DEF, MID, FWD (with hyperparameter tuning)
-- A simulated annealing optimiser that explores beyond greedy local maxima
+- A **simulated annealing (SA)** optimiser that explores beyond greedy local maxima
 
 *Example of the transfer optimisation results:*
 ![Transfer optimisation](gameweek_manager_1.png)
@@ -116,13 +125,15 @@ But every gameweek still involved multiple "human-in-the-loop" decisions: model 
 
 ### Phase 3: Agentic reasoning (Dec–today)
 
-Predictions aren't enough. Consider this scenario: the ML model says Haaland is 8.2 xP, Salah is 7.8 xP. The optimiser picks Haaland.
+Predictions aren't enough. Consider this scenario: the ML model says Haaland is 8.2 **xP** (expected points), Salah is 7.8 xP. The optimiser picks Haaland.
 
-But a strategic thinker might reason differently: there's a double gameweek in 3 weeks, should I bank the transfer now? Or take a hit to avoid a price rise? What about template safety if I'm protecting rank?
+But a strategic thinker might reason differently: there's a **double gameweek (DGW)** in 3 weeks, should I bank the transfer now? Or take a hit to avoid a price rise? What about **template safety** (minimising downside by covering highly-owned players) if I'm protecting rank?
 
 This is strategic reasoning, not number crunching. The optimiser maximises expected points; it can't reason about context.
 
 So I'm building an LLM agent. It uses the ML predictions as a tool, but adds a layer of strategic reasoning: DGWs, fixture swings, chip timing, template safety. It's experimental, but it's the "brain" in "Engineering an FPL Brain."
+
+Optimisation is brittle when the horizon matters (price changes, chip timing, variance management). That’s why the agent exists.
 
 *Running the agent CLI:*
 ![Running the agent](transfer_agent_animated.gif)
@@ -145,7 +156,7 @@ At the moment it's restricted to transfer recommendations, rather than full team
 
 **Medium-term**: Multi-gameweek transfer planning (sequential optimisation). Benchmark against top 10K manager strategies. Automate more of the weekly workflow.
 
-**The ambition**: a system that can reason about FPL at the level of a top player not just crunch numbers, but understand when to take risks, when to play safe, when to go differential.
+**The ambition**: a system that can reason about FPL at the level of a top player: not just crunch numbers, but understand when to take risks, when to play safe, when to go differential.
 
 I don't know if I'll get there. But I'm building in (semi-)public, so you can follow along.
 
@@ -161,4 +172,8 @@ I'll share code, experiments that failed, and weekly accountability on how the s
 
 ---
 
-Follow along: [LinkedIn](https://linkedin.com/in/alexspanos)
+### How to follow (and what feedback I’d love)
+
+- **Follow**: connect on [LinkedIn](https://linkedin.com/in/alexspanos) (I’ll post each article + key charts there)
+- **Tell me if I’m wrong**: if you’ve worked on probabilistic forecasting, ranking losses, or optimisation under uncertainty, I’d love pointers
+- **Sanity-check strategy**: if you’re consistently top 10K and want to critique assumptions (risk, chip timing, “template” dynamics), DM me on LinkedIn
