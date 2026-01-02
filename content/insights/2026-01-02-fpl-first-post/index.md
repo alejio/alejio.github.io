@@ -152,8 +152,10 @@ What you're seeing: the orchestrator delegating to 5 specialised tools (multi-GW
 
 At the moment it's restricted to transfer recommendations, rather than full team and captain selection. I've used [Pydantic AI](https://ai.pydantic.dev/) as the agentic framework for its structured outputs and [Logfire](https://logfire.pydantic.dev/) integration for observability.
 
+
 *Logfire trace:*
-![Logfire trace](logfire.png)
+
+<img src="logfire.png" alt="Logfire trace" style="width: 60%; display: block; margin: 2em auto 0 auto;" />
 
 ---
 
