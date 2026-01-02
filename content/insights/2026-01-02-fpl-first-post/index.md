@@ -132,7 +132,7 @@ But every gameweek still involved multiple "human-in-the-loop" decisions: model 
 
 ### Phase 3: Agentic reasoning (Dec–today)
 
-Predictions aren't enough. Consider this scenario: the ML model says Haaland is 8.2 **xP** (expected points), Salah is 7.8 xP. The optimiser picks Haaland.
+Predictions aren't enough. Consider this scenario: the ML model says Haaland is 8.2 **xP** (expected points), Saka is 7.8 xP. The optimiser picks Haaland.
 
 But a strategic thinker might reason differently: there's a **double gameweek (DGW)** in 3 weeks, should I bank the transfer now? Or take a hit to avoid a price rise? What about **template safety** (minimising downside by covering highly-owned players) if I'm protecting rank?
 
@@ -140,7 +140,7 @@ This is strategic reasoning, not number crunching. The optimiser maximises expec
 
 So I'm building an LLM agent. It uses the ML predictions as a tool, but adds a layer of strategic reasoning: DGWs, fixture swings, chip timing, template safety. It's experimental, but it's the "brain" in "Engineering an FPL Brain."
 
-Pure mathematical optimisation is great for solving for a single moment, but it can be surprisingly fragile. An optimiser might suggest burning your last £0.5m in the bank to upgrade a bench defender today, only to leave you exactly £0.1m short of bringing back **Mohamed Salah** when he returns from **AFCON** in two weeks. That's where the agent comes in: it uses tools like `analyze_fixture_context` to spot upcoming fixture swings and `get_template_players` to ensure you aren't walking into a differential trap, providing the long-term strategic common sense that a simple calculator would miss.
+Pure mathematical optimisation is great for solving for a single moment, but it can be surprisingly fragile. An optimiser might suggest burning your last £0.5m in the bank to upgrade a bench defender today, only to leave you exactly £0.1m short of bringing back **Bryan Mbeumo** when he returns from **AFCON** in two weeks. That's where the agent comes in: it uses tools like `analyze_fixture_context` to spot upcoming fixture swings and `get_template_players` to ensure you aren't walking into a differential trap, providing the long-term strategic common sense that a simple calculator would miss.
 
 *Running the agent CLI:*
 
