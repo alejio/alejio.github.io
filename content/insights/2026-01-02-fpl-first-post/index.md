@@ -17,7 +17,7 @@ This isn't a success story. At least, not yet.
 
 - **What I built**: A data pipeline, an ML model for expected points, a squad optimiser, and an experimental LLM agent for transfers.
 - **Current performance**: Currently ranked ~2.7m out of 11m players (though I'm sitting +86 points above the average).
-- **What’s novel**: Integrating betting-derived features, using a hauler-focused loss function, and prioritizing agentic tools over pure optimization.
+- **What’s novel**: Integrating betting-derived features, using a hauler-focused loss function, and prioritising agentic tools over pure optimisation.
 - **What’s next**: Multi-gameweek planning, better uncertainty quantification, and further automation.
 
 
