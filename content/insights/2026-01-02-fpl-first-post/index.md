@@ -6,18 +6,20 @@ draft: false
 
 Kicking off a series documenting the development of an ML system for Fantasy Premier League.
 
+
 Gameweek 19. The exact midpoint of the Premier League season.
 
->5 months of work. 395 commits. 833 tests. 10 evals. A production-minded system: reproducible pipelines, a CLI, a growing test suite, and observability.
+
+> After five months of work, 395 commits, and over 800 tests, I’ve built a production-minded system with reproducible pipelines, a CLI, and built-in observability. 
 
 This isn't a success story. At least, not yet.
 
-**TL;DR**
+**tl;dr**
 
-- **What I built**: a data pipeline + ML expected points model + transfer/squad/captainoptimiser + experimentalLLM agent for transfers
-- **Current performance**: ranked ~2.7m/11m (but +86 points above average)
-- **What’s novel**: betting-derived features, hauler-focused loss, agent tools over optimisation
-- **What’s next**: multi-gameweek planning, uncertainty, and more automation
+- **What I built**: A data pipeline, an ML model for expected points, a squad optimiser, and an experimental LLM agent for transfers.
+- **Current performance**: Currently ranked ~2.7m out of 11m players (though I'm sitting +86 points above the average).
+- **What’s novel**: Integrating betting-derived features, using a hauler-focused loss function, and prioritizing agentic tools over pure optimization.
+- **What’s next**: Multi-gameweek planning, better uncertainty quantification, and further automation.
 
 
 *Points per gameweek compared to FPL average and the current #1 manager*
@@ -29,7 +31,7 @@ This isn't a success story. At least, not yet.
 
 For the uninitiated: Fantasy Premier League is a free-to-play fantasy football game where you select 15 real Premier League players within a £100m budget. You earn points based on their real-world performances (goals, assists, clean sheets), make weekly transfers to optimise your squad, and compete against millions of other managers in a global leaderboard.
 
-The core problem: **predict player points and optimise transfers under constraints**, then layer strategy over the optimiser.
+> The core problem: **predict player points and optimise transfers, team selection and captaincy under constraints**, then layer strategy over the optimiser.
 
 For me, it's an excellent ML playground:
 
@@ -56,7 +58,7 @@ Refreshingly, I'm +86 points above the average manager. But more interestingly, 
 
 ## The journey so far
 
-**Current state:** 25 database tables. 15 domain services. Reproducible training. A growing test suite. Observability for the agent.
+The system now consists of 25 database tables and 15 domain services, with reproducible training, a growing test suite, and observability for the agent.
 
 The architecture progressed through three distinct phases:
 
@@ -133,15 +135,20 @@ This is strategic reasoning, not number crunching. The optimiser maximises expec
 
 So I'm building an LLM agent. It uses the ML predictions as a tool, but adds a layer of strategic reasoning: DGWs, fixture swings, chip timing, template safety. It's experimental, but it's the "brain" in "Engineering an FPL Brain."
 
-Optimisation is brittle when the horizon matters (price changes, chip timing, variance management). That’s why the agent exists.
+Pure mathematical optimisation is great for solving for a single moment, but it can be surprisingly fragile. An optimiser might suggest burning your last £0.5m in the bank to upgrade a bench defender today, only to leave you exactly £0.1m short of bringing back **Mohamed Salah** when he returns from **AFCON** in two weeks. That's where the agent comes in: it uses tools like `analyze_fixture_context` to spot upcoming fixture swings and `get_template_players` to ensure you aren't walking into a differential trap, providing the long-term strategic common sense that a simple calculator would miss.
+
 
 *Running the agent CLI:*
-![Running the agent](transfer_agent_animated.gif)
+
+<img src="transfer_agent_animated.gif" alt="Running the agent" style="width: 60%; display: block; margin: 0 auto 2em auto;" />
+
 
 What you're seeing: the orchestrator delegating to 5 specialised tools (multi-GW xP predictions, fixture context analysis, SA optimiser validation, squad weakness detection, template player analysis), then synthesising recommendations with strategic reasoning.
 
+
 *Output of the agent CLI:*
-![Example agent recommendation](agent_recommendation.png)
+
+<img src="agent_recommendation.png" alt="Agent output" style="width: 60%; display: block; margin: 2em auto 0 auto;" />
 
 At the moment it's restricted to transfer recommendations, rather than full team and captain selection. I've used [Pydantic AI](https://ai.pydantic.dev/) as the agentic framework for its structured outputs and [Logfire](https://logfire.pydantic.dev/) integration for observability.
 
