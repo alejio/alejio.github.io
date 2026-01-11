@@ -48,7 +48,7 @@ FPL managers don't need perfect point predictions. They need to identify **haule
 
 Top managers don't just find haulers; they find the *optimal* haulers. The goal isn't minimising MAE; it's identifying which players will explode.
 
-This post describes an ML pipeline I built that achieves both: **1.80 MAE** (33% better than rule-based) whilst specifically optimising for hauler identification. The key innovations are domain-aware feature engineering, a hybrid position-specific architecture, and custom loss functions that penalise missing explosive performances.
+This post describes an ML pipeline I built that achieves both: **1.80 MAE cross-validated, 1.31 MAE on GW20-21 holdout** (33% better than rule-based baseline) whilst specifically optimising for hauler identification. The key innovations are domain-aware feature engineering, a hybrid position-specific architecture, and custom loss functions that penalise missing explosive performances.
 
 ### A Note on Design Philosophy
 
@@ -267,7 +267,7 @@ Trees handle this natively. Linear models need extensive one-hot encoding and lo
 
 Standard MAE treats all errors equally. However, in FPL, missing a 15-point haul costs more than overestimating a 2-point blank.
 
-I implemented an asymmetric loss function for LightGBM: **2x penalty for under-predicting haulers (8+ points)**. This teaches the model to prioritise capturing explosive performances.
+I implemented an asymmetric loss function for LightGBM: **2x penalty for under-predicting haulers (10+ points)**. This teaches the model to prioritise capturing explosive performances. Note: The 10-point threshold aligns with the FPL community definition of "haulers" as explosive, game-changing performances.
 
 ---
 
