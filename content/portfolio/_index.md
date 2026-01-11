@@ -33,7 +33,7 @@ As the joint-first data hire at TrueLayer (~employee #20), I built the company's
 
 **What I built**:
 - **Transaction categorisation**: Automated classification of bank transactions enabling spend analysis
-- **Income estimation API**: ML model inferring income from transaction patterns—shipped as a commercial product
+- **Income estimation API**: ML model inferring income from transaction patterns-shipped as a commercial product
 - **Affordability signals**: Rent detection, recurring payment identification, and spending pattern analysis
 
 **Impact**: 99.9% availability with weekly model updates at scale. These became TrueLayer's first revenue-generating data products beyond the core API.
@@ -46,7 +46,7 @@ As the joint-first data hire at TrueLayer (~employee #20), I built the company's
 
 **A live NLP application tracking media bias in AI news coverage.**
 
-I built an end-to-end data platform on GCP to analyse how news outlets frame AI—whether as transformative ("boomer") or existential risk ("doomer"). The system ingests articles daily via NewsAPI, classifies them using a zero-shot transformer model (facebook/bart-large-mnli), and surfaces trends through an interactive dashboard.
+I built an end-to-end data platform on GCP to analyse how news outlets frame AI-whether as transformative ("boomer") or existential risk ("doomer"). The system ingests articles daily via NewsAPI, classifies them using a zero-shot transformer model (facebook/bart-large-mnli), and surfaces trends through an interactive dashboard.
 
 **Architecture**: Cloud Functions → BigQuery → Cloud Run (Streamlit)
 
@@ -74,7 +74,7 @@ Led Data Science development for a B2B SaaS platform that predicted consumer tre
 
 During my time as a geophysicist, I introduced machine learning techniques to automate quality control processes in seismic data swell noise attenuation. This work was novel enough to be published and presented at a major industry conference.
 
-**Publication**: "Using Statistical Techniques to Improve the QC Process of Swell Noise Filtering" — EAGE London 2013
+**Publication**: "Using Statistical Techniques to Improve the QC Process of Swell Noise Filtering" - EAGE London 2013
 
 **Impact**: 70% reduction in manual QC time for TB-scale seismic datasets
 

@@ -10,8 +10,8 @@ I’m happy to hear from readers, collaborate on open-source, or connect with pe
 
 ## Get in Touch
 
-- **Email**: [contact&#64;alexiospanos&#46;com](mailto:contact&#64;alexiospanos&#46;com) — Feedback, corrections, or OSS collaboration
-- **LinkedIn**: [Alex Spanos](https://uk.linkedin.com/in/alexspanos) — Best for a quick hello
+- **Email**: [contact&#64;alexiospanos&#46;com](mailto:contact&#64;alexiospanos&#46;com) - Feedback, corrections, or OSS collaboration
+- **LinkedIn**: [Alex Spanos](https://uk.linkedin.com/in/alexspanos) - Best for a quick hello
 - **GitHub**: [alejio](https://github.com/alejio)
 
 ## Topics I write about / enjoy discussing (non-commercial)

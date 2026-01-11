@@ -25,8 +25,8 @@ Since 2018, I’ve worked at the forefront of **Open Banking and fintech AI**, b
 
 ## Certifications & Affiliations
 
-- **Chartered Statistician (CStat)** — Royal Statistical Society  
-- **Advanced Data Science Professional (AfDSP)** — Alliance for Data Science Professionals  
+- **Chartered Statistician (CStat)** - Royal Statistical Society  
+- **Advanced Data Science Professional (AfDSP)** - Alliance for Data Science Professionals  
 - **Certified ML Engineer (AWS)**  
 - **Professional Data Engineer (Google Cloud)**  
 
@@ -49,24 +49,24 @@ If you have feedback on a post, spot an error, or want to connect as a peer in t
 
 ## Experience snapshot
 
-- **Head of Data — Stream (2025–Present)**
+- **Head of Data - Stream (2025–Present)**
   Leading data initiatives at Stream.
 
-- **Head of Data & AI — Lunos (2025)**
+- **Head of Data & AI - Lunos (2025)**
   Founding team member; built data & AI capabilities, implemented data governance, observability, and AI-driven decision systems.
 
-- **Head of Data — Tarabut (2021–2025)**  
+- **Head of Data - Tarabut (2021–2025)**  
   Scaled data team across 4 countries; delivered >$4M in data product revenue; established group-wide data governance.
 
-- **Lead Data Scientist / ML Engineer / PM — TrueLayer (2018–2021)**  
+- **Lead Data Scientist / ML Engineer / PM - TrueLayer (2018–2021)**  
   Built first ML-powered services and data products at UK’s first open banking unicorn.
 
-- **Senior Data Scientist — Black Swan Data (2017–2018)**  
+- **Senior Data Scientist - Black Swan Data (2017–2018)**  
   Delivered consumer trend prediction models for Fortune 500 clients.
 
-- **Data Scientist — IBM (2015–2017)**  
+- **Data Scientist - IBM (2015–2017)**  
   Built ML solutions for customer analytics and fraud prevention in Tier 1 banks.
 
-- **Geophysicist (Applied ML role) — PGS (2012–2015)**  
+- **Geophysicist (Applied ML role) - PGS (2012–2015)**  
   Developed ML approaches for seismic data processing as part of applied projects.
 
