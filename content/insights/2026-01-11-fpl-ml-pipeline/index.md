@@ -16,7 +16,7 @@ categories:
 
 ## tl;dr - Key Takeaways
 
-**For FPL managers who don't want the technical details:**
+**If you don't want the technical details:**
 
 **Model picks for GW22+:** Bruno G., Watkins, Guéhi, Vicario - [full list below](#players-to-watch).
 
