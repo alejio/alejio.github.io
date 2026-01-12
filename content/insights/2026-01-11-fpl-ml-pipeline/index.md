@@ -53,7 +53,7 @@ This post describes an ML pipeline I built that aims to address both sides of th
 
 ### A Note on Design Philosophy
 
-This approach extrapolates from historical data; past patterns predicting future outcomes. Like stock market models, it has a ceiling: top 1% managers may incorporate information the model can't see (injury whispers, press conferences, watching matches). The model prioritises consistency over this potential upside.
+> This approach extrapolates from historical data; past patterns predicting future outcomes. Like stock market models, it has a ceiling: top 1% managers may incorporate information the model can't see (injury whispers, press conferences, watching matches). The model prioritises consistency over this potential upside.
 
 ---
 
