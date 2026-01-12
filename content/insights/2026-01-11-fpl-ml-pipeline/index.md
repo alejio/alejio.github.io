@@ -175,7 +175,7 @@ The training pipeline follows a disciplined two-phase approach:
 - Build HybridPositionModel router
 - Deploy with position-based prediction routing
 
-**Note on architecture selection**: The pipeline re-evaluates every gameweek. The hybrid configuration (GKP position-specific, others unified) shown here is from this specific training run; next week's optimal configuration may differ. Treat this as *one valid configuration*, not *the* optimal one.
+> **Note on architecture selection**: The pipeline re-evaluates every gameweek. The hybrid configuration (GKP position-specific, others unified) shown here is from this specific training run; next week's optimal configuration may differ. Treat this as *one valid configuration*, not *the* optimal one.
 
 ### Why GKP Gets Its Own Model (This Week)
 
