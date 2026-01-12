@@ -83,7 +83,7 @@ I ran three independent importance analyses: Mean Decrease Impurity (MDI), Permu
 | 6 | **rolling_5gw_minutes** | — | Playing time is destiny. No minutes, no points. |
 | 7 | **rolling_5gw_ict_index** | — | ICT captures overall involvement: goals, assists, threat, creativity. |
 
-**Key insight**: These 7 features alone provide 60-70% of the model's predictive power. If you only had 7 features, these would be the ones.
+> **Key insight**: These 7 features alone provide 60-70% of the model's predictive power. If you only had 7 features, these would be the ones.
 
 The top 3 features account for 39% of total predictions. Notice what dominates: value metrics and recent form. The model cares mostly about *value efficiency and momentum*.
 
@@ -161,6 +161,7 @@ Elite players maintain positive SHAP even against the best defences. Budget play
 The training pipeline follows a disciplined two-phase approach:
 
 ![Full Pipeline Flowchart](full_pipeline_flowchart.png)
+
 *Full training pipeline from data split to production. Phase 1 evaluates all models in parallel using walk-forward validation. Phase 2 retrains the selected hybrid architecture on the full dataset.*
 
 **Phase 1: Evaluation** (GW1-19 training, GW20-21 holdout)
@@ -174,7 +175,7 @@ The training pipeline follows a disciplined two-phase approach:
 - Build HybridPositionModel router
 - Deploy with position-based prediction routing
 
-**Note on architecture selection**: The pipeline re-evaluates every gameweek. The hybrid configuration (GKP position-specific, others unified) shown here is from this specific training run—next week's optimal configuration may differ. Treat this as *one valid configuration*, not *the* optimal one.
+**Note on architecture selection**: The pipeline re-evaluates every gameweek. The hybrid configuration (GKP position-specific, others unified) shown here is from this specific training run; next week's optimal configuration may differ. Treat this as *one valid configuration*, not *the* optimal one.
 
 ### Why GKP Gets Its Own Model (This Week)
 
@@ -454,7 +455,7 @@ This required three design decisions:
 
 The headline "33% better than rule-based" is real but incomplete. The model excels at relative ranking while failing at absolute prediction of top performers.
 
-**Next**: Quantile regression to better capture haul ceilings, and a larger asymmetric loss penalty (5x instead of 2x). The 33% MAE improvement is a foundation—not the finish line.
+**Next**: Quantile regression to better capture haul ceilings, and a larger asymmetric loss penalty (5x instead of 2x). The 33% MAE improvement is a foundation - not the finish line.
 
 ---
 
