@@ -119,7 +119,7 @@ Conventional FPL wisdom treats tough fixtures as near-automatic blanks, with man
 
 **Example**: A premium striker facing a top-6 defence might predict 8.2 xP versus 10.1 xP in an easy fixture; a 19% drop, not the dramatic reduction that conventional wisdom suggests.
 
-**Strategic implication**: Hold premium assets through 2-3 tough fixtures; their floor remains high.
+> **Strategic implication**: Hold premium assets through 2-3 tough fixtures; their floor remains high.
 
 #### Finding 2: Form Amplifies Fixture Quality
 
@@ -136,7 +136,7 @@ The relationship between form and fixture isn't additive; it's **multiplicative*
 
 A player with 35+ points in 5 gameweeks gets a 2-3x boost from weak opponents versus strong ones.
 
-**Strategic implication**:  Form chasing has diminishing returns. By the time a player's rolling form is obvious to everyone, their price has risen and ownership has spiked; you're no longer getting differential value.
+> **Strategic implication**:  Form chasing has diminishing returns. By the time a player's rolling form is obvious to everyone, their price has risen and ownership has spiked; you're no longer getting differential value.
 
 #### Finding 3: Budget Players Are Fixture-Dependent
 
@@ -150,7 +150,7 @@ The SHAP spread tells the story:
 
 Elite players maintain positive SHAP even against the best defences. Budget players go negative.
 
-**Strategic implication**: Rotate budget picks based on fixture runs; set-and-forget premiums.
+> **Strategic implication**: Rotate budget picks based on fixture runs; set-and-forget premiums.
 
 ---
 
