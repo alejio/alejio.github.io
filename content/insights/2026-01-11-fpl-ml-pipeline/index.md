@@ -18,15 +18,15 @@ categories:
 
 **If you don't want the technical details:**
 
-**Model picks for GW22+:** Bruno G., Watkins, Guéhi, Vicario - [full list below](#players-to-watch).
+> **Early signals for GW22+:** Bruno Guimarães, Watkins, Guéhi, Vicario (see the [full list below]  (#players-to-watch)).
 
-1. **Value efficiency beats star names**: The model's #1 signal is points-per-pound, not raw talent. A £6m midfielder averaging 5 pts/GW is often better than a £12m premium averaging 7.
+1. **Value efficiency beats star names** (*see ["Magnificent Seven"](#the-magnificent-seven-features-that-actually-matter)*): The model's #1 signal is points-per-pound, not raw talent. A £6m midfielder averaging 5 pts/GW is often better than a £12m premium averaging 7.
 
 2. **Recent form matters more than season averages**: The last 2 gameweeks are weighted 2x more than games 4-5 weeks ago. Chase momentum, not reputation.
 
-3. **Premium players are fixture-proof**: Elite players (£10m+) only lose ~20% of their expected points in tough fixtures. Don't bench Salah against City.
+3. **Premium players are fixture-proof** (*see [SHAP finding 1](#finding-1-elite-players-are-fixture-proof)*): Elite players (£10m+) only lose ~20% of their expected points in tough fixtures. Don't bench Salah against City.
 
-4. **Budget players need fixture rotation**: Unlike premiums, budget picks show 2.5x swings based on opponent. Rotate your £5-7m players aggressively.
+4. **Budget players need fixture rotation** (*see [SHAP finding 3](#finding-3-budget-players-are-fixture-dependent)*): Unlike premiums, budget picks show 2.5x swings based on opponent. Rotate your £5-7m players aggressively.
 
 5. **Caveat**: The model ranks players well but can't reliably pick the single best captain each week (0% accuracy on holdout).
 
@@ -38,22 +38,22 @@ categories:
 
 Standard regression models trained on Fantasy Premier League data have a curious failure mode: they predict everyone will score 5-7 points with no meaningful differentiation.
 
-This makes sense from an optimisation perspective. Most FPL players score between 2 and 6 points per gameweek. A model that predicts 5.2 for everyone achieves a respectable Mean Absolute Error (MAE). The problem is that this prediction is useless; not because 5-7 is the wrong range, but because it tells you nothing about which players to pick.
+This makes sense from an optimisation perspective. Most FPL players score between 2 and 6 points per gameweek, but a model that predicts 5.2 for everyone achieves a respectable Mean Absolute Error (MAE) while useless in practice - it tells you nothing about which players to pick.
 
-FPL managers don't need perfect point predictions. They need to identify **haulers**: the explosive 10+ point performances that separate top managers from the rest. Or, at minimum, reliably rank players so the best options rise to the top. Analysis of top 1% FPL managers reveals the stakes:
+FPL players don't need perfect point predictions. They need to identify **haulers**: the explosive 10+ point performances that separate top managers from the rest. Or, at minimum, reliably rank players so the best options rise to the top. Analysis of top 1% FPL managers reveals the stakes:
 
 | Metric | Top 1% | Average | Difference |
 |--------|--------|---------|------------|
 | Captain Points per GW | 18.7 | 15.0 | **+24%** |
 | Haulers per GW | 3.0 | 2.4 | **+25%** |
 
-Top managers don't just find haulers; they find the *optimal* haulers. The goal isn't minimising MAE; it's identifying which players will explode.
+Top players don’t just get hauls; they tend to be on the right ones more often.
 
 This post describes an ML pipeline I built that aims to address both sides of the problem: maintaining reasonable point-prediction accuracy while deliberately optimising for differentiation. In practice, this means trading some average error for better separation between players - particularly in the upper tail, where haulers live. For reference, the model achieves 1.80 MAE under cross-validation and 1.31 MAE on a GW20–21 hold-out, outperforming a simple rule-based baseline, but those figures are a sanity check rather than the goal. The core design choices focus on domain-aware feature engineering, position-specific modelling, and loss functions that penalise missed explosive performances.
 
 ### A Note on Design Philosophy
 
-> This approach extrapolates from historical data; past patterns predicting future outcomes. Like stock market models, it has a ceiling: top 1% managers may incorporate information the model can't see (injury whispers, press conferences, watching matches). The model prioritises consistency over this potential upside.
+> This approach extrapolates from historical data; it assumes the past patterns carry forward. Like any model trained on historical data, it has a ceiling: top 1% managers may incorporate information the model can't see (injury whispers, press conferences, watching matches). The model prioritises consistency over this potential upside.
 
 ---
 
@@ -73,17 +73,17 @@ What makes this feature set effective isn't the count; it's the systematic itera
 
 I ran three independent importance analyses: Mean Decrease Impurity (MDI), Permutation Importance, and SHAP values. Seven features consistently appeared in the top 10 across all three methods, with strong agreement on relative importance:
 
-| Rank | Feature | Importance | Why It Matters |
+| Rank | Feature | Signal Strength | Why It Matters |
 |------|---------|------------|----------------|
-| 1 | **points_per_pound** | 17.4% | Value efficiency beats raw talent. A £6m player with 5 xP > £12m player with 8 xP for squad building. |
-| 2 | **ewm_5gw_points** | 11.6% | Exponential weighted form. Last 2 games matter **2x more** than games 4-5 weeks ago. |
-| 3 | **value_vs_position** | 10.2% | Positional context. A 4-point defender means something different than a 4-point forward. |
-| 4 | **clean_sheet_potential** | — | Defensive security matters as much as attacking returns for DEF/GKP. |
-| 5 | **cs_x_minutes** | — | Clean sheet probability × minutes = defensive ceiling. |
-| 6 | **rolling_5gw_minutes** | — | Playing time is destiny. No minutes, no points. |
-| 7 | **rolling_5gw_ict_index** | — | ICT captures overall involvement: goals, assists, threat, creativity. |
+| 1 | **points_per_pound** | High | Value efficiency beats raw talent. A £6m player with 5 xP > £12m player with 8 xP for squad building. |
+| 2 | **ewm_5gw_points** | Medium-High | Exponential weighted form. Last 2 games matter **2x more** than games 4-5 weeks ago. |
+| 3 | **value_vs_position** | Medium-High | Positional context. A 4-point defender means something different than a 4-point forward. |
+| 4 | **clean_sheet_potential** | Medium | Defensive security matters as much as attacking returns for DEF/GKP. |
+| 5 | **cs_x_minutes** | Medium | Clean sheet probability × minutes = defensive ceiling. |
+| 6 | **rolling_5gw_minutes** | Medium | Playing time is destiny. No minutes, no points. |
+| 7 | **rolling_5gw_ict_index** | Medium | ICT captures overall involvement: goals, assists, threat, creativity. |
 
-> **Key insight**: These 7 features alone provide 60-70% of the model's predictive power. If you only had 7 features, these would be the ones.
+> **Key insight**: These features dominate across all three methods. If I had to rebuild with a minimal set, these would be my starting point.
 
 The top 3 features account for 39% of total predictions. Notice what dominates: value metrics and recent form. The model cares mostly about *value efficiency and momentum*.
 
@@ -100,7 +100,7 @@ Several feature categories I expected to be important... weren't:
 
 Even more annoyingly: 35 features had 0.0 importance across all three methods. These include all venue-specific features, all ranking features, and all fixture run projections (3GW, 5GW lookahead).
 
-**Practical implication**: I can remove 20% of features (174 → 139) with zero accuracy loss; this means simpler models, faster training, and less overfitting.
+**Practical implication**: I can likely remove ~20% of features (174 → 139) with minimal impact, but I still need to confirm via ablation.
 
 ### SHAP Reveals the Non-Linear Truth
 
@@ -136,7 +136,7 @@ The relationship between form and fixture isn't additive; it's **multiplicative*
 
 A player with 35+ points in 5 gameweeks gets a 2-3x boost from weak opponents versus strong ones.
 
-> **Strategic implication**:  Form chasing has diminishing returns. By the time a player's rolling form is obvious to everyone, their price has risen and ownership has spiked; you're no longer getting differential value.
+> **Strategic implication**:  The upside is real, but it’s rarely “free”. When form is obvious, prices/ownership move quickly; so the edge is often in spotting early momentum, not buying after the crowd.
 
 #### Finding 3: Budget Players Are Fixture-Dependent
 
@@ -168,7 +168,7 @@ The training pipeline follows a disciplined two-phase approach:
 - Train 4 unified models in parallel (RandomForest, LightGBM, XGBoost, GradientBoosting)
 - Train 4 position-specific models per position (16 total)
 - Evaluate on holdout using walk-forward validation
-- Decision: Which positions benefit from specialization?
+- Decision: Which positions benefit from specialisation?
 
 **Phase 2: Production** (GW1-21 full training)
 - Retrain selected models on all available data
@@ -203,7 +203,7 @@ The unified model tries to learn one pattern across all positions; however, GKPs
 ### Model Selection: RandomForest Wins (This Week)
 
 ![Model Comparison](model_comparison.png)
-*RandomForest selected for production with 1.800 MAE, outperforming all regressors and achieving 33% improvement over the rule-based baseline (2.7 MAE).*
+*RandomForest selected for production with 1.800 MAE (≈33% lower than a rule-based baseline at ~2.7 MAE). On the GW20–21 holdout, the same baseline comparison is ≈51%.*
 
 | Rank | Regressor | MAE | vs RandomForest |
 |------|-----------|-----|-----------------|
@@ -215,7 +215,7 @@ The unified model tries to learn one pattern across all positions; however, GKPs
 
 **What is the rule-based baseline?** Before building the ML pipeline, I used a simpler heuristic model: it weights recent form (last 5 gameweeks) at 70% and season averages at 30%, multiplied by team strength ratings and fixture difficulty. No learned parameters—just hand-tuned coefficients based on FPL domain knowledge. It serves as a sanity check: if the ML model can't beat simple heuristics, the added complexity isn't justified.
 
-RandomForest provides the best MAE as well as stable uncertainty quantification via tree ensemble variance; this is critical for captain selection where I want to identify high-ceiling players.
+RandomForest provides the best MAE as well as a useful dispersion signal via ensemble variance (helpful for riskier decisions like captaincy); this is critical for captain selection where I want to identify high-ceiling players.
 
 ### Validation Methodology: The Numbers Behind the Numbers
 
@@ -269,7 +269,7 @@ Trees handle this natively. Linear models need extensive one-hot encoding and lo
 
 Standard MAE treats all errors equally. However, in FPL, missing a 15-point haul costs more than overestimating a 2-point blank.
 
-I implemented an asymmetric loss function for LightGBM: **2x penalty for under-predicting haulers (10+ points)**. This teaches the model to prioritise capturing explosive performances. Note: The 10-point threshold aligns with the FPL community definition of "haulers" as explosive, game-changing performances.
+I implemented an asymmetric loss function for LightGBM: **2x penalty for under-predicting haulers (10+ points)**. This teaches the model to prioritise capturing explosive performances.
 
 ---
 
@@ -281,10 +281,10 @@ Evaluated on GW20-21 holdout (n=1,585 predictions, model trained on GW1-19):
 
 | Metric | ML Model | Baselines | Context |
 |--------|----------|-----------|---------|
-| MAE | 1.31 | Rule-based: ~2.7 | 33% lower error |
+| MAE | 1.31 | Rule-based: ~2.7 | 51% lower error |
 | Spearman ρ | 0.62 | — | Moderate rank-order |
 | Captain accuracy | 0/2 GWs (0%) | Random: 6.7%, Highest-owned: ~25% | See limitations below |
-| Hauler precision@15 | 20% | Expected: 50-70% | Gap addressed in limitations |
+| Hauler precision@15 | 20% | Aspirational: 50-70% | Gap addressed in limitations |
 
 *Note: These holdout metrics are more conservative than cross-validation metrics. The model excels at ranking but struggles with identifying the absolute top performer.*
 
@@ -332,7 +332,7 @@ Not every metric tells a success story. Transparency about failures is as import
 
 On the GW20-21 holdout set:
 
-| Metric | Expected | Actual | Gap |
+| Metric | Aspirational | Actual | Gap |
 |--------|----------|--------|-----|
 | Top-15 overlap | 12-13/15 (80%) | 1.7/15 (11%) | **-69%** |
 | Captain accuracy | 40%+ | 0/2 (0%) | **-40%** |
@@ -348,19 +348,7 @@ The model systematically under-predicts high scorers by 5-12 points. Analysis su
 2. **MAE-based training**: Even with custom hauler objectives, the loss function doesn't sufficiently reward capturing 15+ point hauls
 3. **Rare event problem**: Haulers (10+ points) are ~8% of observations; the model learns the majority pattern
 
-### Sample Size Constraints
-
-When training position-specific models, sample sizes become critical:
-
-| Position | Samples | Features | Ratio | Overfitting Risk |
-|----------|---------|----------|-------|------------------|
-| Overall | 5,930 | 162 | 36:1 | Acceptable |
-| DEF | 293 | ~155 | 1.9:1 | Moderate |
-| MID | 354 | ~155 | 2.3:1 | Moderate |
-| FWD | 85 | ~155 | 0.5:1 | **Severe** |
-| GKP | 58 | ~155 | 0.37:1 | **Critical** |
-
-This explains why only GKP uses a position-specific model; it's the only position where the 11.48% improvement outweighs the overfitting risk. For FWD and GKP specifically, the feature-to-sample ratio is concerning.
+Note on sample sizes: Evaluation metrics are computed over player-game rows (e.g., thousands of predictions). However, when training position-specific models, the effective diversity is bounded by the number of unique players in that position. Goalkeepers are a small and behaviourally distinct group, which makes specialised modelling more fragile and easier to overfit.
 
 ### The 35 Zero-Importance Features
 
@@ -401,11 +389,11 @@ The model identifies the following players as high-value picks for the upcoming 
 
 | Player | Team | Price | 1GW xP | 3GW xP | Why the Model Likes Them |
 |--------|------|-------|--------|--------|--------------------------|
-| Bruno G. | Newcastle | £7.2m | 7.1 | 15.3 | Top 1GW pick, underpriced for output |
-| Rogers | Aston Villa | £7.6m | 5.8 | 14.1 | Form momentum, favorable fixtures |
+| Bruno Guimarães | Newcastle | £7.2m | 7.1 | 15.3 | Top 1GW pick, underpriced for output |
+| Rogers | Aston Villa | £7.6m | 5.8 | 14.1 | Form momentum, favourable fixtures |
 | Wirtz | Liverpool | £8.2m | 5.7 | 14.4 | Strong 3GW projection |
 | Foden | Man City | £8.7m | 5.7 | 15.1 | Elite x fixture interaction positive |
-| B.Fernandes | Man Utd | £9.1m | 5.6 | 14.1 | Set-piece threat, consistent floor |
+| Bruno Fernandes | Man Utd | £9.1m | 5.6 | 14.1 | Set-piece threat, consistent floor |
 | Bowen | West Ham | £7.7m | 5.1 | 15.4 | Good value at price point |
 
 ### Defenders
@@ -427,36 +415,46 @@ The model identifies the following players as high-value picks for the upcoming 
 | Verbruggen | Brighton | £4.5m | 4.0 | 11.9 | Budget with upside |
 | Raya | Arsenal | £5.9m | 4.0 | 12.8 | Premium defence, 34% owned |
 
-**Disclaimer**: These predictions use historical patterns and current form. Football is unpredictable; injuries, rotation, and tactical changes can invalidate any model. The model's 0% captain accuracy on holdout means you should not blindly follow these picks. Use them as one input among many.
+**Disclaimer**: Use with caution 😉.
 
 ---
 
 ## Conclusion
 
-Building an ML system for FPL required abandoning standard regression assumptions. I don't want the model that minimises average error; I want the model that identifies explosive performances. Although I am not succeeding enough, yet!
+Building an ML system for FPL meant moving away from “predict the average well” and towards something closer to the decision problem: separating likely hauls from the pack. I’m not there yet, but the pipeline is now producing signals that are directionally useful, and it’s made the failure modes very obvious.
 
-This required three design decisions:
+This required three design choices:
 
-1. **174 domain-aware features** that capture nuances the FPL app doesn't show (exponential form weighting, elite-fixture interactions, betting market signals). Of these, 35 proved to have zero importance; an opportunity for simplification.
+1. **Domain-aware features** (174 total) to capture things the FPL UI flattens away (exponential form weighting, fixture interactions, market signals). The nice surprise: 35 features show zero importance, which is a clear simplification/pruning opportunity.
 
-2. **Custom loss functions** that penalise missing haulers 2x more than overestimating blanks. In practice, this wasn't sufficient; the model still under-predicts high scorers.
+2. **Custom asymmetric loss functions** to penalise missing hauls more than overestimating blanks. This helps, but it still isn’t strong enough: the model continues to under-predict the true upper tail.
 
-3. **Hybrid architecture** that gives goalkeepers specialised treatment. This was justified by data (11% improvement) but constrained by small sample sizes (58 GKP samples).
+3. **A hybrid architecture** that treats positions differently. The lift is real, but the constraint is equally real: small samples (such as 58 for GKP) make anything position-specific fragile.
 
 **What worked:**
-- Ranking accuracy (Spearman 0.62) for portfolio construction
-- Value efficiency optimisation via `points_per_pound` feature dominance
-- Understanding feature importance through rigorous 3-method analysis
 
-**What didn't work:**
-- Captain selection (0% accuracy on holdout)
-- Top-15 identification (11% overlap vs expected 80%)
-- Hauler capture (20% precision vs expected 50-70%)
+- Ranking quality (Spearman ~0.62): good enough for selection/portfolio construction
 
-The headline "33% better than rule-based" is real but incomplete. The model excels at relative ranking while failing at absolute prediction of top performers.
+- Clear value signals (`points_per_pound` dominates)
 
-**Next**: Quantile regression to better capture haul ceilings, and a larger asymmetric loss penalty (5x instead of 2x). The 33% MAE improvement is a foundation - not the finish line.
+- Much better clarity on what matters, via a rigorous three-method importance analysis
 
+**What didn’t (yet):**
+
+- Captain choice (0% on holdout)
+
+- Top-15 identification (11% overlap vs ~80% target)
+
+- Hauler capture (20% precision vs 50–70% target)
+
+The model is useful for relative ranking, but still weak at calling the single highest-ceiling outcome in a given week, which is exactly where FPL points are won.
+
+## What's next?
+
+Even with a better model, picking an FPL team is still an optimisation problem under hard constraints. This post stops at ranking and signal generation by design.
+The next step is the optimiser: using simulated annealing to turn noisy model outputs into squad and captaincy decisions under real FPL constraints (budget, positions, and risk appetite).
+
+---
 ---
 
 *Model: GW1-21 Hybrid (RandomForest unified + GKP position-specific)*
