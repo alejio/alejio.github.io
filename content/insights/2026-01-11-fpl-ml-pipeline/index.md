@@ -5,6 +5,7 @@ draft: false
 categories:
 - Data Science
 - Machine Learning
+- Fantasy Premier League
 ---
 
 *What 174 features taught me about FPL prediction, and where ML still fails*
@@ -13,7 +14,7 @@ categories:
 
 ---
 
-## TL;DR - Key Takeaways
+## tl;dr - Key Takeaways
 
 **For FPL managers who don't want the technical details:**
 

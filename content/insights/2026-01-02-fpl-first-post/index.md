@@ -2,6 +2,10 @@
 title: "Engineering an FPL Brain: Why I'm Building in Public (While Losing)"
 date: 2026-01-02T09:32:37Z
 draft: false
+categories:
+- Data Science
+- Machine Learning
+- Fantasy Premier League
 ---
 
 Kicking off a series documenting the development of an ML system for Fantasy Premier League.
