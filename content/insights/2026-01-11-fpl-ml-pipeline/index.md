@@ -49,7 +49,7 @@ FPL managers don't need perfect point predictions. They need to identify **haule
 
 Top managers don't just find haulers; they find the *optimal* haulers. The goal isn't minimising MAE; it's identifying which players will explode.
 
-This post describes an ML pipeline I built that achieves both: **1.80 MAE cross-validated, 1.31 MAE on GW20-21 holdout** (33% better than rule-based baseline) whilst specifically optimising for hauler identification. The key innovations are domain-aware feature engineering, a hybrid position-specific architecture, and custom loss functions that penalise missing explosive performances.
+This post describes an ML pipeline I built that aims to address both sides of the problem: maintaining reasonable point-prediction accuracy while deliberately optimising for differentiation. In practice, this means trading some average error for better separation between players - particularly in the upper tail, where haulers live. For reference, the model achieves 1.80 MAE under cross-validation and 1.31 MAE on a GW20–21 hold-out, outperforming a simple rule-based baseline, but those figures are a sanity check rather than the goal. The core design choices focus on domain-aware feature engineering, position-specific modelling, and loss functions that penalise missed explosive performances.
 
 ### A Note on Design Philosophy
 
