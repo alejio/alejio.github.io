@@ -18,7 +18,7 @@ categories:
 
 **If you don't want the technical details:**
 
-> **Early signals for GW22+:** Bruno Guimarães, Watkins, Guéhi, Vicario (see the [full list below] (#players-to-watch)).
+> **Early signals for GW22+:** Bruno Guimarães, Watkins, Guéhi, Vicario (see the [full list below](#players-to-watch)).
 
 1. **Value efficiency beats star names** (*see ["Magnificent Seven"](#the-magnificent-seven-features-that-actually-matter)*): The model's #1 signal is points-per-pound, not raw talent. A £6m midfielder averaging 5 pts/GW is often better than a £12m premium averaging 7.
 
