@@ -420,7 +420,7 @@ The model is useful for relative ranking. But it is still weak at finding the si
 
 Even with a better model, team selection is an optimisation problem with hard constraints. This post stops at ranking and signal generation by design.
 
-The optimiser does the next step: simulated annealing turns noisy model outputs into squad and captaincy decisions within real FPL constraints (budget, positions, and risk appetite). The [first post in this series](/insights/2026-01-02-fpl-first-post/) shows it in action.
+The optimiser does the next step: simulated annealing turns noisy model outputs into squad and captaincy decisions within real FPL constraints (budget, positions, and risk appetite). The [next post](/insights/2026-02-18-fpl-agent-deep-dive/) shows how the agent uses it as a checker.
 
 ---
 
