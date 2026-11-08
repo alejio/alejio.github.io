@@ -1,5 +1,5 @@
 ---
-title: "Building an FPL Agent: Tools, Context, and a Checker That Keeps It Honest"
+title: "Building an FPL Agent: Tools, Context, and a Checker"
 date: 2026-02-18T08:00:00+00:00
 draft: false
 categories:
