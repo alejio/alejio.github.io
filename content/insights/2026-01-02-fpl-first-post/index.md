@@ -162,13 +162,13 @@ At the moment, the agent gives only transfer recommendations, not full team and 
 
 ## Where this is heading
 
-**Short-term** (next 3–4 months): Refine the LLM agent: more tools, better reasoning, chip planning. Add uncertainty quantification to predictions. Improve captain accuracy (currently 22% hauler rate).
+**Short-term**: Refine the LLM agent: more tools, better reasoning, chip planning. Add uncertainty quantification to predictions. Improve captain accuracy (currently 22% hauler rate).
 
 **Medium-term**: Multi-gameweek transfer planning (sequential optimisation). Benchmark against top 10K manager strategies. Automate more of the weekly workflow.
 
 **The ambition**: a system that reasons about FPL like a top player. It knows when to take risks, when to play safe and when to go differential.
 
-I don't know if I'll get there. But I'm building in (semi-)public, so you can follow along. I'll share code, failed experiments and weekly performance.
+I don't know if I'll get there. But I'm building in (semi-)public, so you can follow along.
 
 **Next: [Predicting Haulers, Not Averages: An ML Pipeline for Fantasy Football](/insights/2026-01-11-fpl-ml-pipeline/)**
 

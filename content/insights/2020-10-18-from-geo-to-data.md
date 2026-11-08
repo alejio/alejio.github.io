@@ -69,7 +69,7 @@ Geophysicists typically work on proprietary GUI-based software platforms, so cod
 
 **3. Cloud computing**
 
-Massive proprietary data centres was how this industry rolled when I was working there. Assuming this hasn't changed, learning some cloud skills by, say learning how to deploy a dockerised Streamlit application on AWS (blog post coming soon) would be very beneficial in my opinion.
+Massive proprietary data centres was how this industry rolled when I was working there. Assuming this hasn't changed, learning some cloud skills by, say learning how to deploy a dockerised Streamlit application on AWS would be very beneficial in my opinion.
 
 **4. Learning the difference between waterfall and Agile**
 

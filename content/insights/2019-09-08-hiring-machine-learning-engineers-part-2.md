@@ -5,7 +5,7 @@ date: "2019-09-08T00:00:00Z"
 title: Hiring Machine Learning Engineers Part 2 - Job spec and assignment
 ---
 
-[Part 1](https://alexiospanos.com/hiring-machine-learning-engineers-part-1/) discussed the emergence of the Machine Learning Engineer role, its distinction from the Data Scientist and the importance of organisations prioritising hiring the former against the latter when data infrastructure maturity is low. In Part 2, we will cover more practical considerations around the hiring process.
+[Part 1](/insights/2019-09-02-hiring-machine-learning-engineers-part-1/) discussed the emergence of the Machine Learning Engineer role, its distinction from the Data Scientist and the importance of organisations prioritising hiring the former against the latter when data infrastructure maturity is low. In Part 2, we will cover more practical considerations around the hiring process.
 
 ## Get the job spec right
 
@@ -77,7 +77,3 @@ I've realised that a few assignments sent to me over the years were arguably ina
 > 3. Provide an end-to-end solution: cover a bit of everything instead of going deep on one area (e.g. don't skip unit tests in favour of a more complex modelling pipeline)
 > 4. Reproducility is key: virtual environments and Docker are your friends
 > 5. A Jupyter Notebook won't cut it :)
-
-
-
-In the final part 3, I will discuss interviewing and having realistic expectations.

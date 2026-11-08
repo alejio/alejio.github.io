@@ -49,8 +49,6 @@ Consider the Model Context Protocol ([MCP](https://modelcontextprotocol.io/intro
 
 Things are moving at a pace I can hardly believe. Already two months have passed since I had my "profound moment" and what felt like "cutting edge" at the time (getting Cursor to deliver Linear tickets) is now maybe already old news. For example, Cursor released a Slack integration a few days ago, which means you can do ["@Cursor fix this" from within a Slack conversation](https://docs.cursor.com/slack)!  Still, it was satisfying to see [Gergely](https://blog.pragmaticengineer.com/author/gergely/)  recently cite this example as a cool new thing (check out his talk [Software engineering with LLMs in 2025: reality check](https://youtu.be/EO3_qN_Ynsk?si=F1QgfnXrE6enLecF)) 
 
-## Coming up: How does all this impact Data Science and ML roles?
+## What this means for Data Science and ML roles
 
-Like many, I am thinking a lot about the impact these new technologies will have on jobs and careers. In the short term, many will discover that they will need to reinvent themselves to adapt to the new reality. The tsunami is well on its way. Observing Software Engineers turning to AI Engineers almost overnight, made me reflect a lot on the role of the Data Scientist and ML Engineer, and even the Product Manager. 
-
-More on the emergence of AI Engineering and the impact on Data Science and ML roles in my next post!
+Like many, I am thinking a lot about the impact these new technologies will have on jobs and careers. In the short term, many will discover that they will need to reinvent themselves to adapt to the new reality. The tsunami is well on its way. Observing Software Engineers turning to AI Engineers almost overnight, made me reflect a lot on the role of the Data Scientist and ML Engineer, and even the Product Manager.

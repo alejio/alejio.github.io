@@ -49,7 +49,7 @@ Be warned; my views are clearly shaped from my own non-comprehensive experiences
 
 ## Hiring Product Managers
 
-As mentioned above, a PM role is most definitely a full-time job. With me not willing to go down this path just yet, the time arrived to hand over the baton to a full-time, seasoned Product Manager! Only the matter of hiring them now. - and I thought that [hiring Machine Learning Engineers](https://alexiospanos.com/hiring-machine-learning-engineers-part-1/) was tricky...
+As mentioned above, a PM role is most definitely a full-time job. With me not willing to go down this path just yet, the time arrived to hand over the baton to a full-time, seasoned Product Manager! Only the matter of hiring them now. - and I thought that [hiring Machine Learning Engineers](/insights/2019-09-02-hiring-machine-learning-engineers-part-1/) was tricky...
 
 In the past months, initially with the help of PM colleagues, I've set-up job specs, interview processes and take-home tasks, and had the chance to interview many talented individuals.
 

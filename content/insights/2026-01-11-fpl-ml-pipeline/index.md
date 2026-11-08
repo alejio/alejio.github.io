@@ -416,11 +416,11 @@ This required three design choices:
 
 The model is useful for relative ranking. But it is still weak at finding the single highest-ceiling player each week, and that is where FPL points are won.
 
-## What's next?
+## From predictions to decisions
 
 Even with a better model, team selection is an optimisation problem with hard constraints. This post stops at ranking and signal generation by design.
 
-The next step is the optimiser: simulated annealing turns noisy model outputs into squad and captaincy decisions within real FPL constraints (budget, positions, and risk appetite).
+The optimiser does the next step: simulated annealing turns noisy model outputs into squad and captaincy decisions within real FPL constraints (budget, positions, and risk appetite). The [first post in this series](/insights/2026-01-02-fpl-first-post/) shows it in action.
 
 ---
 
