@@ -4,53 +4,23 @@ title: About
 permalink: /about/
 ---
 
-**Hey there, I'm Alex. I was the first data hire at two open banking companies, TrueLayer and Tarabut. I'm now Head of Data at Stream.**
+**Hey there, I'm Alex. I lead data teams, and I still like to build things myself.**
 
-I specialise in **AI, machine learning, and data platform architecture**. Before Stream, I was **Head of Data & AI at Lunos**, as part of the founding team.
+I'm Head of Data at Stream. Before that, I was the first data hire at two open banking companies, TrueLayer and Tarabut. Both times I started from zero: no team, no platform, no data products.
 
-I write about data leadership, AI strategy, and building data capabilities in high-growth environments.
+## How I got here
 
-## My journey
+I trained as a mathematician and statistician. I studied Applied Mathematics at the National Technical University of Athens. After that, I worked as a statistician on biomedical studies and co-authored [peer-reviewed research](https://scholar.google.com/citations?user=zD0uU6MAAAAJ&hl=en). Then I took an MSc in Statistics at the University of Leeds, where I graduated with distinction and won the Royal Statistical Society prize for best MSc graduate. I've been a Chartered Statistician for over a decade.
 
-My career is grounded in **Data Science**. I hold an MSc in Statistics (awarded with distinction) and have been a **Chartered Statistician (CStat)** for over a decade. I first applied machine learning in geophysics, where my ML approaches reduced seismic data QC time by 70%. Later I moved to financial services, open banking, and fintech.
+My Leeds dissertation used statistics to automate a quality-control step in marine seismic data processing. My first job was in the same field: I was a geophysicist, and I processed seismic data for oil and gas surveys. That job taught me attention to detail and disciplined testing.
 
-Since 2018, I’ve worked in **Open Banking and fintech AI**. At **TrueLayer** (the UK’s first open banking unicorn), I built the company's first ML services: transaction categorisation, income estimation, and verification. They ran at 99.9% availability with weekly model updates. At **Tarabut** (MENA’s leading open banking platform), I designed the cloud-native data platform (AWS, GCP, Snowflake, dbt), scaled the data team to 10 people across 4 countries, and chaired the data governance committee. Across these roles, I reported directly to CEOs and CTOs, delivered data products deployed across six regions, and generated multi-million dollar revenue from data initiatives.
+In 2015 I moved to data science. I wrote about that change in [From Geophysicist to "Data Scientist"](/insights/2020-10-18-from-geo-to-data/). Since 2018 I've worked in fintech, where I built ML products, data platforms, and the teams behind them.
 
-In 2025 I joined **Stream** (formerly Wagestream), a financial wellness fintech, as Head of Data. I built a hub-and-spoke data team with analytics engineers embedded in the business. I also built an MCP-based semantic layer, so that AI agents and self-serve analytics use the same governed metric definitions.
+## What you'll find here
 
-## Experience snapshot
+I write when I learn something that I think is worth sharing. Some posts are about leading teams, such as [hiring ML engineers](/insights/2019-09-02-hiring-machine-learning-engineers-part-1/) and [operating principles](/insights/2024-01-30-operating-principles/). Others are about things I build on the side, mostly as an excuse to learn. The latest is an [AI agent that manages my Fantasy Premier League team](/insights/2026-02-18-fpl-agent-deep-dive/).
 
-- **Head of Data - Stream (2025–Present)**
-  Own the data function at Stream (formerly Wagestream), a financial wellness fintech, reporting to the CPTO. Built a hub-and-spoke data team, an MCP-based context layer for AI agents, and an in-house, AI-first BI platform.
-
-- **Head of Data & AI - Lunos (2025)**
-  Founding team member; built data & AI capabilities, implemented data governance, observability, and AI-driven decision systems.
-
-- **Head of Data - Tarabut (2021–2025)**  
-  Built the data platform and team from scratch; delivered revenue-generating data products; established group-wide data governance.
-
-- **Lead Data Scientist / ML Engineer / PM - TrueLayer (2018–2021)**  
-  Built the company's first ML-powered services and data products.
-
-- **Senior Data Scientist - Black Swan Data (2017–2018)**  
-  Delivered consumer trend prediction models for Fortune 500 clients.
-
-- **Data Scientist - IBM (2015–2017)**  
-  Built ML solutions for customer analytics and fraud prevention in Tier 1 banks.
-
-- **Geophysicist (Applied ML role) - PGS (2012–2015)**  
-  Developed ML approaches for seismic data processing as part of applied projects.
-
-## Certifications & Affiliations
-
-- **Chartered Statistician (CStat)** - Royal Statistical Society  
-- **Advanced Data Science Professional (AfDSP)** - Alliance for Data Science Professionals  
-- **Certified ML Engineer (AWS)**  
-- **Professional Data Engineer (Google Cloud)**  
-
-## Speaking & Publications
-
-I’ve presented on ML/MLOps and open banking data products at industry conferences, and co-authored peer-reviewed research in applied ML and statistics.
+For the career detail, see my [portfolio](/portfolio/) or [LinkedIn](https://uk.linkedin.com/in/alexspanos).
 
 ---
 
