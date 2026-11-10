@@ -12,12 +12,12 @@ Selected projects demonstrating end-to-end delivery of data platforms, ML system
 
 **Enterprise data platform powering data products across 4 jurisdictions.**
 
-As the first data hire at Tarabut ($57M funded), I designed and delivered the company's Enterprise Data Platform from scratch. The platform unified data from UK and Middle East operations across AWS and GCP, enabling both internal analytics and external data products.
+As the first data hire at Tarabut, I designed and delivered the company's Enterprise Data Platform from scratch. The platform unified data from UK and Middle East operations across AWS and GCP, enabling both internal analytics and external data products.
 
 **Key achievements**:
 - Scaled data function from 1 to 10 FTEs across 4 countries
 - Delivered ML-powered bank transaction enrichment services deployed across 6 regions
-- Generated **$4M+ in data product revenue**
+- Launched revenue-generating data products
 - Led post-M&A data platform integration
 - Established group-wide Data Governance framework as Committee Chair
 

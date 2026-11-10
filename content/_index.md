@@ -15,7 +15,7 @@ I'm a data and AI leader with over a decade of experience building data capabili
 
 Explore my [key projects and achievements](/portfolio/) in data science, AI, and technology leadership, including:
 
-- Open banking data platform generating **$4M+ revenue** across 6 regions
+- Open banking data platform powering revenue-generating data products across 6 regions
 - Production ML models powering the UK's first open banking unicorn
 - End-to-end NLP application tracking media bias in AI coverage
 

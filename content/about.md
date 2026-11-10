@@ -20,7 +20,7 @@ Since 2018, I’ve worked at the forefront of **Open Banking and fintech AI**, b
 
 - **AI & Machine Learning Leadership**: Delivered production-grade ML systems in fintech: from financial behaviour insights to automated categorisation and verification services. Led MLOps efforts ensuring 99.9% availability and weekly model updates at scale.
 - **Data Platforms & Governance**: Designed and integrated cloud-native data platforms (AWS, GCP, Snowflake, dbt). Chaired data governance committees, embedding compliance with data protection laws through policies, processes, and culture change.
-- **Open Banking & Fintech Data Products**: Built data capabilities and products that opened new revenue streams, contributing over **$4M in data product revenue** and serving internal and external stakeholders across regions.
+- **Open Banking & Fintech Data Products**: Built data capabilities and products that opened new revenue streams and served internal and external stakeholders across regions.
 - **Team Building & Technical Leadership**: Scaled data functions across 4+ countries, managing 10+ FTE, and reporting directly to CEOs and CTOs.
 
 ## Certifications & Affiliations
@@ -56,7 +56,7 @@ If you have feedback on a post, spot an error, or want to connect as a peer in t
   Founding team member; built data & AI capabilities, implemented data governance, observability, and AI-driven decision systems.
 
 - **Head of Data - Tarabut (2021–2025)**  
-  Scaled data team across 4 countries; delivered >$4M in data product revenue; established group-wide data governance.
+  Scaled data team across 4 countries; delivered revenue-generating data products; established group-wide data governance.
 
 - **Lead Data Scientist / ML Engineer / PM - TrueLayer (2018–2021)**  
   Built first ML-powered services and data products at UK’s first open banking unicorn.
