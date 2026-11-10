@@ -4,95 +4,60 @@ date: "2024-01-01T00:00:00Z"
 layout: single
 ---
 
-Selected projects across data platforms, ML systems, and data products.
+Selected work, newest first.
 
 ---
 
-## AI-Native Data Function (Stream)
+## Stream: a data function built for AI agents
 
-**A data team and platform where people and AI agents work from the same trusted definitions.**
+I lead data at Stream (formerly Wagestream), a financial wellness fintech. I report to the CPTO.
 
-As Head of Data at Stream (formerly Wagestream), a financial wellness fintech, I own the data function: data platform, analytics engineering, data science, BI, governance, and data products. I report to the CPTO.
+People and AI agents both ask data questions across the company, and both need the same definitions. So I built an MCP-based context layer. It gives AI agents governed access to metric definitions, schema documentation and lineage. Self-serve analytics and agentic coding now run on trusted definitions instead of guesswork.
 
-**Key achievements**:
-- Designed and built a hub-and-spoke data team: a lean core plus analytics engineers embedded in Operations, Credit and the US, so that key parts of the business have a dedicated data partner
-- Designed a Junior-to-Staff levelling framework across the Analytics Engineering and Data Science tracks
-- Built an MCP-based semantic context layer that gives AI agents governed access to metric definitions, schema documentation and lineage, so self-serve analytics and agentic coding run on trusted definitions
-- Launched an in-house, AI-first BI platform that replaced the incumbent commercial tool, as part of a data-stack cost-optimisation programme on track to save ~$150k/year
-- Created real-time UK macroeconomic indicators from Stream's proprietary data and shared them with senior external stakeholders
+I also launched an in-house, AI-first BI platform that replaced the incumbent commercial tool. It is part of a data-stack cost programme on track to save ~$150k/year.
 
-**Stack**: Snowflake, dbt, Python, Streamlit, MCP, AWS
+From Stream's proprietary data, I created real-time UK macroeconomic indicators, which we shared with senior external stakeholders.
+
+The team is hub-and-spoke: a lean core, plus analytics engineers embedded in Operations, Credit and the US.
 
 ---
 
-## Open Banking Data Platform (Tarabut)
+## Tarabut: an open banking data platform from scratch
 
-**Enterprise data platform powering data products across 4 jurisdictions.**
+I was the first data hire at Tarabut, MENA's leading open banking platform. I designed and built the enterprise data platform on AWS, GCP, Snowflake and dbt. After M&A, I led the integration that put UK and Middle East data on one platform.
 
-As the first data hire at Tarabut, I designed and delivered the company's Enterprise Data Platform from scratch. The platform unified data from UK and Middle East operations across AWS and GCP, enabling both internal analytics and external data products.
+On that platform we delivered ML-powered bank transaction enrichment services across 6 regions, and external data products that opened new revenue streams.
 
-**Key achievements**:
-- Scaled data function from 1 to 10 FTEs across 4 countries
-- Delivered ML-powered bank transaction enrichment services deployed across 6 regions
-- Turned platform data into external data products that opened new revenue streams
-- Led the post-M&A integration that put UK and Middle East data on one platform
-- Chaired the Data Governance Committee and set one governance framework for the whole group
-
-**Stack**: AWS, GCP, Snowflake, dbt, Python, Kubernetes, Airflow
+The team grew from 1 to 10 people across 4 countries. I also chaired the Data Governance Committee and set one governance framework for the whole group.
 
 ---
 
-## Financial Behaviour ML Models (TrueLayer)
+## TrueLayer: the company's first ML products
 
-**Production ML services powering the UK's first open banking unicorn.**
+I was the joint-first data hire (~employee #20) at TrueLayer, the UK's first open banking unicorn. I built its first ML services, which turned raw bank transactions into financial insights:
 
-As the joint-first data hire at TrueLayer (~employee #20), I built the company's first ML-powered services from the ground up. These models extracted financial insights from raw bank transactions to power lending, affordability, and verification use cases.
+- **Transaction categorisation** for spend analysis
+- **Income estimation API**, shipped as a commercial product
+- **Affordability signals**: rent detection, recurring payments, and spending patterns
 
-**What I built**:
-- **Transaction categorisation**: Automated classification of bank transactions enabling spend analysis
-- **Income estimation API**: ML model inferring income from transaction patterns - shipped as a commercial product
-- **Affordability signals**: Rent detection, recurring payment identification, and spending pattern analysis
-
-**Impact**: 99.9% availability with weekly model updates at scale. These became TrueLayer's first revenue-generating data products beyond the core API.
-
-**Stack**: Python, Scikit-learn, TensorFlow, Kubernetes, AWS
+The services ran at 99.9% availability with weekly model updates. They became TrueLayer's first revenue-generating data products beyond the core API.
 
 ---
 
-## AI Doom Boom Bias Tracker
+## Earlier work
 
-**A live NLP application tracking media bias in AI news coverage.**
-
-I built an end-to-end data platform on GCP to analyse how news outlets frame AI - whether as transformative ("boomer") or existential risk ("doomer"). The system ingests articles daily via NewsAPI, classifies them using a zero-shot transformer model (facebook/bart-large-mnli), and surfaces trends through an interactive dashboard.
-
-**Architecture**: Cloud Functions → BigQuery → Cloud Run (Streamlit)
-
-**Stack**: Python, BigQuery, Cloud Functions, Cloud Scheduler, Hugging Face Transformers, Streamlit, Docker
-
-[Live App](https://streamlit-app-824805393106.europe-west2.run.app/) ・ [GitHub](https://github.com/alejio/news-bias-detection) ・ [Technical Write-up](/insights/2024-10-20-ai-doom-boom-bias-tracker/)
+- **Black Swan Data**: led data science for a platform that predicted consumer trends from 100M+ social media posts a month, for Fortune 500 clients.
+- **IBM**: built ML solutions for customer analytics and fraud prevention in Tier 1 banks.
+- **PGS**: used ML to automate quality control of seismic swell noise filtering, which cut manual QC time by 70%. Presented at EAGE London 2013.
 
 ---
 
-## Consumer Trend Prediction (Black Swan Data)
+## On the side
 
-**ML pipeline processing 100M+ social media posts monthly for Fortune 500 clients.**
+**FPL agent.** I built an AI agent that manages my Fantasy Premier League team. An ML model predicts player points, an optimiser picks the squad within the game's constraints, and an LLM agent with tools makes the weekly decisions. I wrote it up in three posts:
 
-Led Data Science development for a B2B SaaS platform that predicted consumer trends by analysing social media signals. The system identified emerging trends weeks before they appeared in traditional market research.
+1. [Engineering an FPL Brain](/insights/2026-01-02-fpl-first-post/)
+2. [Predicting Haulers, Not Averages: An ML Pipeline for Fantasy Football](/insights/2026-01-11-fpl-ml-pipeline/)
+3. [Building an FPL Agent: Tools, Context, and a Checker](/insights/2026-02-18-fpl-agent-deep-dive/)
 
-**Clients**: Fortune 500 CPG and retail companies
-
-**Stack**: Python, NLP, distributed computing
-
----
-
-## Seismic Data ML Automation (PGS)
-
-**Applied ML to geophysical data processing, reducing QC time by 70%.**
-
-During my time as a geophysicist, I introduced machine learning techniques to automate quality control processes in seismic data swell noise attenuation. This work was novel enough to be published and presented at a major industry conference.
-
-**Publication**: "Using Statistical Techniques to Improve the QC Process of Swell Noise Filtering" - EAGE London 2013
-
-**Impact**: 70% reduction in manual QC time for TB-scale seismic datasets
-
-**Stack**: R, MATLAB, signal processing
+**AI Doom Boom Bias Tracker (2024).** An NLP pipeline on GCP that classified how news outlets frame AI. [Write-up](/insights/2024-10-20-ai-doom-boom-bias-tracker/) ・ [GitHub](https://github.com/alejio/news-bias-detection)
